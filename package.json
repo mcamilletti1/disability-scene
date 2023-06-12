@@ -1,0 +1,23 @@
+{
+  "name": "disability-scene",
+  "version": "1.0.0",
+  "description": "A movie review website that reviews movies based on how well they represent disability on screen. This website will be in the style of Rotten Tomatoes, but for movies about disability. Users will be able to write reviews about different movies and rate them on a scale of 1-5 based on different qualities such as authentic casting of disabled actors, presence of common disability stereotypes, accuracy of representation, and whether or not the film was made by disabled filmmakers. It will be an educational resource about disability representation as well as a showcase for disabled filmmakers and actors. There will be a backend database with models for actors, films, and reviews with full CRUD functionality, as well as an interactive front-end.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
