@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="movieStyle.css">
+    <title>Disability Scene - Movie Page</title>
+  </head>
+  <body>
+	<script src="movieScript.js"></script>
+    <section id="navBar">
+        <header>
+            <img id="logo" src="file:///Users/margaretcamilletti/Downloads/logo_on_white.svg" alt="Disability Scene logo" width="125px" height="20px"/>
+        </header>
+        <nav>
+            <button id="moviesButton">Movies</button>
+            <button id="tvButton">TV Shows</button>
+            <form id="searchForm" role="search">
+                <button type="submit" width="16px" height="16px" aria-label="Search button"></button>
+                <input type="text" id="searchInput" name="searchInput" placeholder="Search..." aria-label="Search bar"/>
+            </form>
+        </nav>
+    </section>
+    <section class="movieInfo">
+        <main>
+            <section id="column1">
+                <button id="returnToMovies" width="110px" height="19px"> Return to Movies </button>
+                <img src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589" width="203px" height="258px" alt="Movie Poster"/>
+            </section>
+            <section id="column2">
+                <section>
+                    <h1 id="movieTitle">Movie Title (year)</h1>
+                    <p id="dateGenreDuration">Release Date | Genre | Duration</p>
+                    <p id="">Movie description movie description movie description movie description movie description movie description Movie description Movie description</p>
+                </section>
+                <section id="scoreStars" height="100px">
+                    <section height="100px" width="200px" class="scoreInfo">
+                        <section id="sceneScore">
+                            <img id="actionImage" src="file:///Users/margaretcamilletti/Downloads/movieaction.png" width="40px" height="28px" aria-hidden="true"/>
+                            <p>Scene Score:</p>
+                        </section>
+                        <p id="scorePercent">87%</p>
+                        <p id="numReviews">(Based on 23 reviews)</p>
+                    </section>
+                    <section class="starInfo" height="134px">
+                        <p>Authentic Casting: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="five stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/></p>
+                        <p>Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="five stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/></p>
+                        <p>Originality: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="five stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/></p>
+                        <p>Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="five stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/></p>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <aside class="tags">
+            <p id="tagsHeader">Tags</p>
+            <p class="tagsSubheader">Disabilities</p>
+            <p id="disabilities">Insert disabilities here insert disabilities here</p>
+            <p class="tagsSubheader">Themes</p>
+            <p id="themes">Insert themes here insert themes here insert themes here insert themes here insert themes here</p>
+            <p class="tagsSubheader">Genre</p>
+            <p id="genre">Insert genre here insert genre here</p>
+            <button width="216px" height="40px" id="reviewButton" aria-label="Submit a review">SUBMIT A REVIEW</button>
+        </aside>
+    </section>
+    <p id="castLabel">Cast & Crew</p>
+    <section class="castInfo">
+        <div id="actor1">
+            <img id="actorImage1" width="100px" aria-label="headshot" height="120px" src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589"/>
+            <p id="actorName1">Actor Name</p>
+            <p id="characterName1">Character Name</p>
+        </div>
+        <div id="actor2">
+            <img id="actorImage2" width="100px" aria-label="headshot" height="120px" src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589"/>
+            <p id="actorName2">Actor Name</p>
+            <p id="characterName2">Character Name</p>
+        </div>
+        <div id="actor3">
+            <img id="actorImag3" width="100px" aria-label="headshot" height="120px" src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589"/>
+            <p id="actorName3">Actor Name</p>
+            <p id="characterName3">Character Name</p>
+        </div>
+        <div id="actor4">
+            <img id="actorImage4" width="100px" aria-label="headshot" height="120px" src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589"/>
+            <p id="actorName4">Actor Name</p>
+            <p id="characterName4">Character Name</p>
+        </div>
+        <div id="actor5">
+            <img id="actorImage5" width="100px" aria-label="headshot" height="120px" src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589"/>
+            <p id="actorName5">Actor Name</p>
+            <p id="characterName5">Character Name</p>
+        </div>
+        <div id="actor6">
+            <img id="actorImage6" width="100px" aria-label="headshot" height="120px" src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589"/>
+            <p id="actorName6">Actor Name</p>
+            <p id="characterName6">Character Name</p>
+        </div>
+        <div id="actor7">
+            <img id="actorImage7" width="100px" aria-label="headshot" height="120px" src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589"/>
+            <p id="actorName7">Actor Name</p>
+            <p id="characterName7">Character Name</p>
+        </div>
+        <div id="actor8">
+            <img id="actorImage8" width="100px" aria-label="headshot" height="120px" src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589"/>
+            <p id="actorName8">Actor Name</p>
+            <p id="characterName8">Character Name</p>
+        </div>
+        <div id="actor9">
+            <img id="actorImage9" width="100px" aria-label="headshot" height="120px" src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589"/>
+            <p id="actorName9">Actor Name</p>
+            <p id="characterName9">Character Name</p>
+        </div>
+        <div id="actor10">
+            <img id="actorImage10" width="100px" aria-label="headshot" height="120px" src="https://cdn.shopify.com/s/files/1/2613/0296/products/de7633c6eaacea337e2bf6268ea749a8.jpg?v=1675955589"/>
+            <p id="actorName10">Actor Name</p>
+            <p id="characterName10">Character Name</p>
+        </div>
+    </section>
+    <section class="reviewInfo">
+       <section height="170px" width="420px" class="review" id="review1">
+            <p id="reviewTitle1">Review Title</p>
+            <p id="reviewerNameDate1">Reviewer Name and Date</p>
+            <p id="reviewText1">Review text review text review text review text review text review text review text review text review text review text</p>
+            <button id="reviewButton1" width="37px" height="37px" aria-label="Read more"></button>
+        </section> 
+        <section height="170px" width="420px" class="review" id="review2">
+            <p id="reviewTitle2">Review Title</p>
+            <p id="reviewerNameDate2">Reviewer Name and Date</p>
+            <p id="reviewText2">Review text review text review text review text review text review text review text review text review text review text</p>
+            <button id="reviewButton2" width="37px" height="37px" aria-label="Read more"></button>
+        </section> 
+    </section>
+    <footer>
+        <p>Copyright © Disability Scene. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
