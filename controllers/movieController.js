@@ -23,6 +23,20 @@ const getMovieById = async (req, res) => {
     }
 }
 
+const getMovieByTitle = async (req,res) => {
+    try{
+        const { titleName } = req.params
+        const movie = await Movie.find({ title: titleName })
+        if (movie) {
+            res.json(movie)
+        } else {
+            return res.status(404).send('Movie with the specified title does not exist')
+        }
+    } catch (error) {
+        return res.status(500).send(error.message)
+    }
+}
+
 const createMovie = async (req,res) => {
     try{
         const { title, mediaType, year, genre, duration, actors, characters, disabilities, themes, img } = req.body
@@ -70,5 +84,6 @@ module.exports = {
     getMovieById,
     createMovie,
     updateMovie,
-    deleteMovie
+    deleteMovie,
+    getMovieByTitle
 }

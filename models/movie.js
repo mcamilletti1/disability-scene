@@ -11,7 +11,8 @@ const movieSchema = new Schema(
         characters: { type: Array, required: true },
         disabilities: { type: Array, required: true },
         themes: { type: Array, required: true },
-        img: { type: String, required: true }
+        img: { type: String, required: true },
+        description: { type: String, required: true }
     },
     { timestamps: true }
 )

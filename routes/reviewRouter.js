@@ -4,6 +4,7 @@ const controller = require('../controllers/reviewController.js')
 
 router.get('/', controller.getReviews)
 router.get('/:id', controller.getReviewById)
+router.get('/movieId/:movieId', controller.getReviewsByMovie)
 
 router.post('/', controller.createReview)
 

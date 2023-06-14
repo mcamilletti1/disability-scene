@@ -23,6 +23,20 @@ const getReviewById = async (req,res) => {
     }
 }
 
+const getReviewsByMovie = async (req,res) => {
+    try{
+        const { movieId } = req.params
+        const reviews = await Review.find({ movie: movieId})
+        if (reviews) {
+            res.json(reviews)
+        } else {
+            return res.status(404).send('Reviews with the specified movie ID do not exist')
+        } 
+        } catch (e) {
+            return res.status(500).send(e.message)
+        }
+    }
+
 const createReview = async (req,res) => {
     try{
         const { movie, title, reviewerName, reviewText, date, castingScore, characterScore, originalityScore, accuracyScore } = req.body
@@ -68,5 +82,6 @@ module.exports = {
     getReviewById,
     createReview,
     updateReview,
-    deleteReview
+    deleteReview,
+    getReviewsByMovie
 }

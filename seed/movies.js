@@ -15,7 +15,8 @@ const main = async () => {
             characters: ["Ben Benjamin", "Dot", "Elsa", "Trevor", "Peaches", "Janet", "Jodie", "Kaitlin", "Mike", "Caregiving Instructor", "Director", "Screenwriter", "Producer", "Producer", "Producer", "Executive Producer", "Executive Producer", "Cinematographer", "Film Editing", "Original Music", "Production Design", "Art Director", "Set Decoration", "Costume Design", "Casting", "Casting"],
             disabilities: ["Duchenne Muscular Dystophy", "Muscular Dystrophy"],
             themes: ["Personal care assistance", "Caregiving", "Dating", "Parent Relationships", "Travel", "Mortality", "Romance"],
-            img: new URL("https://upload.wikimedia.org/wikipedia/en/3/3b/The_Fundamentals_of_Caring_poster.jpg")
+            img: new URL("https://upload.wikimedia.org/wikipedia/en/3/3b/The_Fundamentals_of_Caring_poster.jpg"),
+            description: "A writer (Paul Rudd) retires after a personal tragedy and becomes a disabled teen's caregiver. When the two embark on an impromptu road trip, their ability to cope is tested as they start to understand the importance of hope and friendship."
         },
         {
             title: "Forrest Gump",
@@ -27,7 +28,8 @@ const main = async () => {
             characters: ["Forrest Gump", "Jenny Curran", "Lt. Dan Taylor", "Pvt. Benjamin Buford 'Bubba' Blue", "Mrs. Gump", "Nurse at park bench", "Young Forrest Gump", "Doctor", "Barber", "Crony", "Crony", "Principal", "Louise, Mrs. Gump's housekeeper", "Elderly Woman", "Elvis Presley", "Dorothy Harris, school bus driver", "Red Headed Boy", "Boy with Cross", "Fat Boy", "Fat Teen", "Director", "Writer", "Screenwriter", "Producer", "Producer", "Producer", "Original Music", "Cinematographer", "Film Editing", "Casting", "Production Design", "Art Director", "Art Director", "Set Decoration", "Costume Design"],
             disabilities: ["Scoliosis", "Amputee"],
             themes: ["Intelligence", "Disabled Veteran", "Friendship", "Romance", "War", "Race and Disability", "History"],
-            img: new URL("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg")
+            img: new URL("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg"),
+            description: "Slow-witted Forrest Gump (Tom Hanks) has never thought of himself as disadvantaged, and thanks to his supportive mother (Sally Field), he leads anything but a restricted life. Whether dominating on the gridiron as a college football star, fighting in Vietnam or captaining a shrimp boat, Forrest inspires people with his childlike optimism. But one person Forrest cares about most may be the most difficult to save -- his childhood love, the sweet but troubled Jenny (Robin Wright)."
         },
         {
             title: "Hush",
@@ -39,7 +41,8 @@ const main = async () => {
             characters: ["Man", "Maddie", "John", "Sarah", "Max", "Director", "Screenwriter", "Screenwriter", "Producer", "Producer", "Executive Producer", "Executive Producer", "Executive Producer", "Executive Producer", "Original Music", "Cinematographer", "Film Editing", "Production Design", "Set Decoration"],
             disabilities: ["Deaf", "Mute", "Deaf-Mute", "Non-verbal"],
             themes: ["Disability and Gender", "Disability Horror"],
-            img: new URL("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zHzBTd502IZf60x8n2g0TB01vPF.jpg")
+            img: new URL("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zHzBTd502IZf60x8n2g0TB01vPF.jpg"),
+            description: "A deaf woman is stalked by a killer in her home."
         },
         {
             title: "The Shape of Water",
@@ -51,7 +54,8 @@ const main = async () => {
             characters: ["Elisa Esposito", "Richard Strickland", "Giles", "Zelda Fuller", "Dr. Robert Hoffstetler", "Amphibian Man", "Fleming", "General Hoyt", "Bernard", "Mihalkov", "Elaine Strickland", "Brewster Fuller", "Yolanda", "Mr. Arzoumanian", "Pie Guy", "Director", "Screenwriter", "Screenwriter", "Producer", "Producer", "Producer", "Cinematographer", "Film Editing", "Original Music", "Production Design", "Art Director", "Set Decoration", "Set Decoration", "Costume Design", "Casting"],
             disabilities: ["Non-verbal", "Mute"],
             themes: ["Romance", "Discrimination", "Friendship", "Ableism"],
-            img: new URL("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg")
+            img: new URL("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg"),
+            description: "Elisa is a mute, isolated woman who works as a cleaning lady in a hidden, high-security government laboratory in 1962 Baltimore. Her life changes forever when she discovers the lab's classified secret -- a mysterious, scaled creature from South America that lives in a water tank. As Elisa develops a unique bond with her new friend, she soon learns that its fate and very survival lies in the hands of a hostile government agent and a marine biologist."
         },
         {
             title: "Don't Worry, He Won't Get Far on Foot",
@@ -63,7 +67,8 @@ const main = async () => {
             characters: ["John Callahan", "Donnie", "Annu", "Dexter", "Suzanne", "Reba", "Corky", "Hans", "Jesus Alvarado", "Tim", "Mike", "Martingale", "Terry Alvarado", "Bonnie", "Cindy", "Margie Bighew", "Nurse Lilly", "Debbie", "Charles-Marie", "Roger Fairies", "Director", "Screenwriter", "Producer", "Producer", "Producer", "Producer", "Cinematographer", "Film Editing", "Film Editing", "Original Music", "Production Design", "Costume Design", "Casting", "Casting"],
             disabilities: ["Quadriplegic", "Wheelchair-user"],
             themes: ["Car Accident", "Addiction", "Disabled Later in Life", "Disability and Sex"],
-            img: new URL("https://www.themoviedb.org/t/p/w300_and_h450_bestv2/rKsiN37qMt8jad5GikZzSeevyI9.jpg")
+            img: new URL("https://www.themoviedb.org/t/p/w300_and_h450_bestv2/rKsiN37qMt8jad5GikZzSeevyI9.jpg"),
+            description: "After nearly dying in a car accident, the last thing Oregon slacker John Callahan intends to do is give up alcohol. Encouraged by his girlfriend and a charismatic sponsor, Callahan reluctantly enters a treatment program and discovers that he has a knack for drawing. The budding artist soon finds himself with a new lease on life when his edgy and irreverent newspaper cartoons gain a national and devoted following."
         }
     ]
 
