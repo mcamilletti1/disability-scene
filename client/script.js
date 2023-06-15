@@ -21,7 +21,7 @@ const showAllMovies = async () => {
     featuredDescription = document.querySelector('#movieDescription')
     featuredDescription.innerHTML = `${allMovies[moviesLength-1].description}`
     featuredImage = document.querySelector('#column1')
-    featuredImage.innerHTML = `<img id="featuredPoster" src="${allMovies[moviesLength-1].img}" width="203px" height="300px" alt="Movie Poster"/>`
+    featuredImage.innerHTML = `<h1>Featured Movie: </h1><img id="featuredPoster" src="${allMovies[moviesLength-1].img}" width="203px" height="300px" alt="Movie Poster"/>`
     const disabilities = document.querySelector('#disabilities')
     disabilities.innerHTML = `${allMovies[moviesLength-1].disabilities.toString()}`
     const themes = document.querySelector('#themes')
@@ -68,8 +68,94 @@ const showAllMovies = async () => {
             casting.innerHTML = `Authentic Casting: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="One Star"/>`
         } else if (featuredCastingScore > 1 && featuredCastingScore <= 1.5) {
             casting.innerHTML = `Authentic Casting: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="1.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
-        } else if (featuredCastingScore > 1.5 )
+        } else if (featuredCastingScore > 1.5 && featuredCastingScore <= 2) {
+            casting.innerHTML = `Authentic Casting: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Two Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredCastingScore > 2 && featuredCastingScore <= 2.5) {
+            casting.innerHTML = `Authentic Casting: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="2.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredCastingScore > 2.5 && featuredCastingScore <= 3) {
+            casting.innerHTML = `Authentic Casting: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Three Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="tru"/>`
+        } else if (featuredCastingScore > 3 && featuredCastingScore <= 3.5) {
+            casting.innerHTML = `Authentic Casting: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="3.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredCastingScore > 3.5 && featuredCastingScore <= 4) {
+            casting.innerHTML = `Authentic Casting: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Four Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredCastingScore > 4 && featuredCastingScore <= 4.5) {
+            casting.HTML = `Authentic Casting: <img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" alt="4.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else {
+            casting.HTML = `Authentic Casting: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Five Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        }
+
+
+        if (featuredCharacterScore <= 0.5) {
+            characters.innerHTML = `Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" alt="0.5 Stars"/>`
+        } else if (featuredCharacterScore > 0.5 && featuredCharacterScore <= 1) {
+            characters.innerHTML = `Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="One Star"/>`
+        } else if (featuredCharacterScore > 1 && featuredCharacterScore <= 1.5) {
+            characters.innerHTML = `Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="1.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredCharacterScore > 1.5 && featuredCharacterScore <= 2) {
+            characters.innerHTML = `Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Two Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredCharacterScore > 2 && featuredCharacterScore <= 2.5) {
+            characters.innerHTML = `Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="2.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredCharacterScore > 2.5 && featuredCharacterScore <= 3) {
+            characters.innerHTML = `Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Three Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="tru"/>`
+        } else if (featuredCharacterScore > 3 && featuredCharacterScore <= 3.5) {
+            characters.innerHTML = `Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="3.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredCharacterScore > 3.5 && featuredCharacterScore <= 4) {
+            characters.innerHTML = `Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Four Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredCharacterScore > 4 && featuredCharacterScore <= 4.5) {
+            characters.HTML = `Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" alt="4.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else {
+            characters.HTML = `Representative Characters: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Five Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        }
+
+
+        if (featuredOriginalityScore <= 0.5) {
+            originality.innerHTML = `Originality: <img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" alt="0.5 Stars"/>`
+        } else if (featuredOriginalityScore > 0.5 && featuredOriginalityScore <= 1) {
+            originality.innerHTML = `Originality: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="One Star"/>`
+        } else if (featuredOriginalityScore > 1 && featuredOriginalityScore <= 1.5) {
+            originality.innerHTML = `Originality: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="1.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredOriginalityScore > 1.5 && featuredOriginalityScore <= 2) {
+            originality.innerHTML = `Originality: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Two Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredOriginalityScore > 2 && featuredOriginalityScore <= 2.5) {
+            originality.innerHTML = `Originality: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="2.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredOriginalityScore > 2.5 && featuredOriginalityScore <= 3) {
+            originality.innerHTML = `Originality: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Three Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="tru"/>`
+        } else if (featuredOriginalityScore > 3 && featuredOriginalityScore <= 3.5) {
+            originality.innerHTML = `Originality: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="3.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredOriginalityScore > 3.5 && featuredOriginalityScore <= 4) {
+            originality.innerHTML = `Originality: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Four Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredOriginalityScore > 4 && featuredOriginalityScore <= 4.5) {
+            originality.HTML = `Originality: <img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" alt="4.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else {
+            originality.HTML = `Originality: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Five Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        }
+
+
+        if (featuredAccuracyScore <= 0.5) {
+            accuracy.innerHTML = `Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" alt="0.5 Stars"/>`
+        } else if (featuredAccuracyScore > 0.5 && featuredAccuracyScore <= 1) {
+            accuracy.innerHTML = `Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="One Star"/>`
+        } else if (featuredAccuracyScore > 1 && featuredAccuracyScore <= 1.5) {
+            accuracy.innerHTML = `Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="1.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredAccuracyScore > 1.5 && featuredAccuracyScore <= 2) {
+            accuracy.innerHTML = `Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Two Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredAccuracyScore > 2 && featuredAccuracyScore <= 2.5) {
+            accuracy.innerHTML = `Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="2.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredAccuracyScore > 2.5 && featuredAccuracyScore <= 3) {
+            accuracy.innerHTML = `Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Three Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="tru"/>`
+        } else if (featuredAccuracyScore > 3 && featuredAccuracyScore <= 3.5) {
+            accuracy.innerHTML = `Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="3.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredAccuracyScore > 3.5 && featuredAccuracyScore <= 4) {
+            accuracy.innerHTML = `Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Four Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        } else if (featuredAccuracyScore > 4 && featuredAccuracyScore <= 4.5) {
+            accuracy.HTML = `Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" alt="4.5 Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>`
+        } else {
+            accuracy.HTML = `Accuracy: <img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" alt="Five Stars"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/><img src="file:///Users/margaretcamilletti/Downloads/star.svg" width="14px" height="11px" aria-hidden="true"/>`
+        }
+
     }
+
+
 
     getFeaturedSceneScore()
 }
