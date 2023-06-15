@@ -75,7 +75,6 @@ main {
 
 .reviewInfo {
     margin-left: 100px;
-    margin-right: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -94,12 +93,11 @@ footer {
 
 .review {
     background-color: #d9d9d9;
-    border: solid 2px #d9d9d9;
-    border-radius: 20px;
-    box-shadow: 0 0 2px 2px grey;
-    width: 500px;
+    border: solid 2px #58B0CC;
+    border-radius: 5px;
+    width: 1050px;
     height: 200px;
-    padding: 2px 10px 10px 10px;
+    padding: 2px 2px 0 10px;
 }
 
 .scoreInfo {
@@ -283,14 +281,45 @@ body {
 .reviewButton {
     border-color: #d9d9d9;
     border-radius: 5px;
-    margin-left: 400px;
-    margin-bottom: 0;
-    padding-bottom: 0;
     height: 30px;
+    float: right;
+    margin-right: 10px;
 }
 
 .reviewButton:hover {
     cursor: pointer;
     border-color: #58B0CC;
     color: #58B0CC;
+}
+
+.actorList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    overflow: scroll;
+    margin-right: none;
+}
+
+.individualActorImage {
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.individualActorImage:hover {
+    filter: brightness(0.8);
+    border: solid 2px #58B0CC;
+}
+
+.individualActor:hover {
+    color: #58B0CC;
+    margin-right: 20px;
+}
+
+.individualCharacter {
+    margin-right: 20px;
+}
+
+#reviewsLabel {
+    margin-left: 100px;
 }

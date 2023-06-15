@@ -10,13 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <script src="featuredReview.js"></script>
   <section id="navBar">
     <header>
         <img id="logo" src="file:///Users/margaretcamilletti/Downloads/logo_on_white.svg" alt="Disability Scene logo" width="125px" height="20px"/>
     </header>
     <nav>
-        <button id="moviesButton"><strong>MOVIES</strong></button>
+        <a href="file:///Users/margaretcamilletti/Desktop/GA/seir-ec-58/projects/disability-scene/client/index.html"><button id="moviesButton"><strong>MOVIES</strong></button></a>
         <button id="tvButton"><strong>TV SHOWS</strong></button>
         <form id="searchForm" role="search">
             <button id="searchButton" type="submit" width="16px" height="16px" aria-label="Search button"><img width="16px" height="16px" aria-hidden="true" src="file:///Users/margaretcamilletti/Downloads/search-sharp.svg"/></button>
@@ -103,80 +102,97 @@
   <h1>Leave a Review</h1>
   <p>
   <label>Reviewer First and Last Name
-  <input type="text" name="customer_name" required>
+  <input id="reviewerNameFL" type="text" name="reviewer_name" required>
   </label> 
   </p>
   
   <p>
   <label>Date (ex. "15 July 2023") 
-  <input type="tel" name="phone_number">
+  <input id="date" type="text" name="date">
   </label>
   </p>
   
    <p>On a scale from 1 to 5, please rate this movie based on its disability representation. For Authentic Casting, was the movie cast with disabled actors playing disabled characters? For Representative Characters, did the characters in this movie seem to represent the thoughts and feelings of real people with disabilities or were they mostly stereotypes/caricatures? For Originality, did the movie attempt to subvert common disability tropes and present a new idea, or did it rely on ableist tropes/stereotypes? For Accuracy, did this film accuractely represent the specific disability depicted in the film?</p>
-  <section id="starButtons">
-  <fieldset>
-    <legend>Authentic Casting:</legend>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="car"> 1</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="van">2</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">3</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">4</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">5</label></p>
-  </fieldset>
+  
+   
+   <div class="castingRating">
+    <p class = "ratingLabel">Authentic Casting: </p>
+    <input id="rating1" type="radio" name="castingRating" value="1">
+    <label for="rating1">1</label>
+    <input id="rating2" type="radio" name="castingRating" value="2">
+    <label for="rating2">2</label>
+    <input id="rating3" type="radio" name="castingRating" value="3">
+    <label for="rating3">3</label>
+    <input id="rating4" type="radio" name="castingRating" value="4">
+    <label for="rating4">4</label>
+    <input id="rating5" type="radio" name="castingRating" value="5">
+    <label for="rating5">5</label>
+  </div>
 
-  <fieldset>
-    <legend>Representative Characters:</legend>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="car">1</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="van">2</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">3</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">4</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">5</label></p>
-  </fieldset>
+ 
+  <div class="characterRating">
+    <p class="ratingLabel">Representative Characters: </p>
+    <input id="characterRating1" type="radio" name="characterRating" value="1">
+    <label for="characterRating1">1</label>
+    <input id="characterRating2" type="radio" name="characterRating" value="2">
+    <label for="characterRating2">2</label>
+    <input id="characterRating3" type="radio" name="characterRating" value="3">
+    <label for="characterRating3">3</label>
+    <input id="characterRating4" type="radio" name="characterRating" value="4">
+    <label for="characterRating4">4</label>
+    <input id="characterRating5" type="radio" name="characterRating" value="5">
+    <label for="characterRating5">5</label>
+  </div>
 
-  <fieldset>
-    <legend>Originality:</legend>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="car">1</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="van">2</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">3</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">4</label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">5</label></p>
-  </fieldset>
 
-   <fieldset>
-     <legend>Accuracy:</legend>
-     <p><label class="choice"> <input type="radio" name="taxi" required value="car">1</label></p>
-     <p><label class="choice"> <input type="radio" name="taxi" required value="van">2</label></p>
-     <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">3</label></p>
-     <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">4</label></p>
-     <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk">5</label></p>
-    </fieldset>
+  <div class="originalityRating">
+    <p class="ratingLabel">Originality: </p>
+    <input id="originalityRating1" type="radio" name="originalityRating" value="1">
+    <label for="originalityRating1">1</label>
+    <input id="originalityRating2" type="radio" name="originalityRating" value="2">
+    <label for="originalityRating2">2</label>
+    <input id="originalityRating3" type="radio" name="originalityRating" value="3">
+    <label for="originalityRating3">3</label>
+    <input id="originalityRating4" type="radio" name="originalityRating" value="4">
+    <label for="originalityRating4">4</label>
+    <input id="originalityRating5" type="radio" name="originalityRating" value="5">
+    <label for="originalityRating5">5</label>
+  </div>
 
-  </section>
+
+  
+  <div class="accuracyRating">
+    <p class="ratingLabel">Accuracy: </p>
+    <input id="accuracyRating1" type="radio" name="accuracyRating" value="1">
+    <label for="accuracyRating1">1</label>
+    <input id="accuracyRating2" type="radio" name="accuracyRating" value="2">
+    <label for="accuracyRating2">2</label>
+    <input id="accuracyRating3" type="radio" name="accuracyRating" value="3">
+    <label for="accuracyRating3">3</label>
+    <input id="accuracyRating4" type="radio" name="accuracyRating" value="4">
+    <label for="accuracyRating4">4</label>
+    <input id="accuracyRating5" type="radio" name="accuracyRating" value="5">
+    <label for="accuracyRating5">5</label>
+  </div>
   
   
 
   
   <p>
   <label>Write a Title for Your Review
-  <input type="text" name="dropoff_place" required list="destinations">
+  <input id="reviewTitle" type="text" name="review_title">
   </label>
-  
-  <datalist id="destinations">
-  <option value="Airport">
-  <option value="Beach">
-  <option value="Fred Flinstone's House">
-  </datalist>
   </p>
   
   <p>
   <label>Write Your Review
-  <textarea name="comments" maxlength="500"></textarea>
+  <textarea id="reviewTextbox" maxlength="500"></textarea>
   </label>
   </p>
   
-  <p><button>Post Review</button></p>
+  <p><button id="postReview">Post Review</button></p>
   
   </form>
-  
+  <script src="featuredReview.js"></script>
 </body>
 </html>

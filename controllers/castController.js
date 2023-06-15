@@ -24,6 +24,21 @@ const getCastById = async (req,res) => {
     }
 }
 
+const getCastByMovie = async (req,res) => {
+    try{
+        const { movieId } = req.params
+        const actors = await Cast.find({ credits: movieId})
+        if (actors) {
+            res.json(actors)
+        } else {
+            return res.status(404).send('Actors with the specified movie ID do not exist')
+        } 
+        } catch (e) {
+            return res.status(500).send(e.message)
+        }
+}
+
+
 const createCast = async (req,res) => {
     try{
         const { name, credits, title, img } = req.body
@@ -71,5 +86,6 @@ module.exports = {
     getCastById,
     createCast,
     updateCast,
-    deleteCast
+    deleteCast,
+    getCastByMovie
 }

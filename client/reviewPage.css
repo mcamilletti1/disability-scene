@@ -17,6 +17,123 @@ nav {
     justify-content: space-between;
     margin-right: 100px;
     font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.castingRating {
+    display: flex;
+}
+
+.characterRating {
+  display: flex;
+}
+
+.originalityRating {
+  display: flex;
+}
+
+.accuracyRating {
+  display: flex;
 }
 
 
+.castingRating input{
+    position: absolute;
+    left: -100vw;
+  }
+
+  .characterRating input{
+    position: absolute;
+    left: -100vw;
+  }
+
+  .originalityRating input{
+    position: absolute;
+    left: -100vw;
+  }
+
+  .accuracyRating input{
+    position: absolute;
+    left: -100vw;
+  }
+  
+  .castingRating label{
+    width: 48px;
+    height: 48px;
+    padding: 48px 0 0;
+    color: white;
+    overflow: hidden;
+    background: url('file:///Users/margaretcamilletti/Downloads/stars.svg') no-repeat top left;
+  }
+
+  .characterRating label{
+    width: 48px;
+    height: 48px;
+    padding: 48px 0 0;
+    color: white;
+    overflow: hidden;
+    background: url('file:///Users/margaretcamilletti/Downloads/stars.svg') no-repeat top left;
+  }
+
+  .originalityRating label{
+    width: 48px;
+    height: 48px;
+    padding: 48px 0 0;
+    color: white;
+    overflow: hidden;
+    background: url('file:///Users/margaretcamilletti/Downloads/stars.svg') no-repeat top left;
+  }
+
+  .accuracyRating label{
+    width: 48px;
+    height: 48px;
+    color: white;
+    padding: 48px 0 0;
+    overflow: hidden;
+    background: url('file:///Users/margaretcamilletti/Downloads/stars.svg') no-repeat top left;
+  }
+
+.castingRating:not(:hover) input:indeterminate + label,
+.castingRating:not(:hover) input:checked ~ input + label,
+.castingRating input:hover ~ input + label{
+  background-position: -48px 0;
+}
+
+.characterRating:not(:hover) input:indeterminate + label,
+.characterRating:not(:hover) input:checked ~ input + label,
+.characterRating input:hover ~ input + label{
+  background-position: -48px 0;
+}
+
+.originalityRating:not(:hover) input:indeterminate + label,
+.originalityRating:not(:hover) input:checked ~ input + label,
+.originalityRating input:hover ~ input + label{
+  background-position: -48px 0;
+}
+
+.accuracyRating:not(:hover) input:indeterminate + label,
+.accuracyRating:not(:hover) input:checked ~ input + label,
+.accuracyRating input:hover ~ input + label{
+  background-position: -48px 0;
+}
+
+.castingRating:not(:hover) input:focus-visible + label{
+  background-position: -96px 0;
+}
+
+.characterRating:not(:hover) input:focus-visible + label{
+  background-position: -96px 0;
+}
+
+.originalityRating:not(:hover) input:focus-visible + label{
+  background-position: -96px 0;
+}
+
+.accuracyRating:not(:hover) input:focus-visible + label{
+  background-position: -96px 0;
+}
+
+.ratingLabel {
+  margin-right: 30px;
+  font-size: 15px;
+}
