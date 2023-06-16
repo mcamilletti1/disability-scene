@@ -175,6 +175,7 @@ body {
     border-color: #F6F6F6;
     background-color: #F6F6F6;
     border-radius: 5px;
+    height: 30px;
 }
 
 #moviesButton:hover {
