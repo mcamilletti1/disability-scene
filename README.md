@@ -6,7 +6,6 @@ Trello: https://trello.com/invite/b/XZqUfGvt/ATTI5f0d2204f06dc4397009682dbc91968
 
 ERD: https://lucid.app/lucidchart/04ccce81-b238-4ab1-b580-275cd1809ea2/edit?viewport_loc=176%2C-19%2C851%2C719%2C0_0&invitationId=inv_9c7db288-e0c5-4aff-927e-0f227dd5fc45
 
-Figma: https://www.figma.com/file/nD6CKtCufLUu5CHgSZBtv9/disability-seen?type=design&node-id=4-2&t=gRB1SbwcANLfCp1X-0
 
 Pages:
 
