@@ -329,3 +329,8 @@ body {
     list-style: none;
     overflow: scroll;
 }
+
+.review {
+    overflow: scroll;
+    margin-bottom: 20px;
+}
