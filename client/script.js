@@ -1,3 +1,5 @@
+
+
 const showAllMovies = async () => {
     const response = await axios.get(`http://localhost:3001/api/movies`)
     const allMovies = response.data
@@ -12,7 +14,7 @@ const showAllMovies = async () => {
         //console.log(allMovies[i].img)
         //console.log(allMovies[i].title)
         movieList = document.querySelector('.movieList')
-        movieList.innerHTML += `<li><img class="individualImage" aria-hidden="true" width="203px" height="258px" src="${allMovies[i].img}"> <p class="individualTitle">${allMovies[i].title}</p></li>`
+        movieList.innerHTML += `<li><a href="file:///Users/margaretcamilletti/Desktop/GA/seir-ec-58/projects/disability-scene/client/moviePage${i}.html"><img class="individualImage" aria-hidden="true" width="203px" height="258px" src="${allMovies[i].img}"> <p class="individualTitle">${allMovies[i].title}</p></a></li>`
     }
     featuredTitle = document.querySelector('#movieTitle')
     featuredTitle.innerHTML = `${allMovies[moviesLength-1].title} (${allMovies[moviesLength-1].year})`
@@ -161,6 +163,58 @@ const showAllMovies = async () => {
 }
 
 showAllMovies()
+
+const searchButton = document.querySelector('#searchButton')
+
+const searchMovies = async (e) => {
+    e.preventDefault()
+    const response = await axios.get('http://localhost:3001/api/movies')
+    const allMovies = response.data
+    searchBar = document.querySelector('#searchBar')
+    movieList = document.querySelector('.movieList')
+    movieList.innerHTML = ""
+    let text = searchBar.value
+
+  
+    for (i=0; i<allMovies.length; i++) {
+        if (text === allMovies[i].title) {
+            movieList.innerHTML += movieList.innerHTML += `<li><img class="individualImage" aria-hidden="true" width="203px" height="258px" src="${allMovies[i].img}"> <p class="individualTitle">${allMovies[i].title}</p></li>`
+        } else {
+            console.log("booo")
+        }
+    }
+
+    for (i=0; i<allMovies.length; i++) {
+        if (allMovies[i].disabilities.includes(text)) {
+            movieList.innerHTML += movieList.innerHTML += `<li><img class="individualImage" aria-hidden="true" width="203px" height="258px" src="${allMovies[i].img}"> <p class="individualTitle">${allMovies[i].title}</p></li>`
+        } else {
+            console.log("boooo")
+        }
+    }
+
+    for (i=0; i<allMovies.length; i++) {
+        if (allMovies[i].themes.includes(text)) {
+            movieList.innerHTML += movieList.innerHTML += `<li><img class="individualImage" aria-hidden="true" width="203px" height="258px" src="${allMovies[i].img}"> <p class="individualTitle">${allMovies[i].title}</p></li>`
+        } else {
+            console.log("boooo")
+        }
+    }
+
+    for (i=0; i<allMovies.length; i++) {
+        if (allMovies[i].genre.includes(text)) {
+            movieList.innerHTML += movieList.innerHTML += `<li><img class="individualImage" aria-hidden="true" width="203px" height="258px" src="${allMovies[i].img}"> <p class="individualTitle">${allMovies[i].title}</p></li>`
+        } else {
+            console.log("boooo")
+        }
+    }
+
+
+}
+
+
+
+
+searchButton.addEventListener('click', searchMovies)
 
 
 

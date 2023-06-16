@@ -2,9 +2,9 @@ const loadReviewPage = async () => {
     const response = await axios.get(`http://localhost:3001/api/movies`)
     const allMovies = response.data
     const moviesLength = response.data.length
-    const mostRecentTitle = allMovies[moviesLength-1].title
+    const movieTitle = allMovies[3].title
     const heading = document.querySelector('h1')
-    heading.innerHTML = `Leave a Review for "${mostRecentTitle}"`
+    heading.innerHTML = `Leave a Review for "${movieTitle}"`
 }
 
 
@@ -15,8 +15,6 @@ let reviewerNameFL = document.querySelector('#reviewerNameFL')
 let reviewTextbox = document.querySelector('#reviewTextbox')
 let dateInput = document.querySelector('#date')
 let postReview = document.querySelector('#postReview')
-const thanku = document.querySelector('#thanku')
-const goback = document.querySelector('#goback')
 
 
 const createReview = async (e) => {
@@ -24,7 +22,7 @@ const createReview = async (e) => {
     const response2 = await axios.get('http://localhost:3001/api/movies')
     const allMovies = response2.data
     const moviesLength = response2.data.length
-    const mostRecentId = allMovies[moviesLength-1]._id
+    const movieId = allMovies[3]._id
     let castingInput = 0
     let castingStars = document.getElementsByName('castingRating')
     for (i=0; i < castingStars.length; i++) {
@@ -57,7 +55,7 @@ const createReview = async (e) => {
         }
     }
     await axios.post(`http://localhost:3001/api/reviews`, {
-            movie: mostRecentId,
+            movie: movieId,
             title: reviewTitle.value,
             reviewerName: reviewerNameFL.value,
             reviewText: reviewTextbox.value,
