@@ -63,7 +63,7 @@ nav {
     padding: 48px 0 0;
     color: white;
     overflow: hidden;
-    background: url('file:///Users/margaretcamilletti/Downloads/stars.svg') no-repeat top left;
+    background: url('images/stars.svg') no-repeat top left;
   }
 
   .characterRating label{
@@ -72,7 +72,7 @@ nav {
     padding: 48px 0 0;
     color: white;
     overflow: hidden;
-    background: url('file:///Users/margaretcamilletti/Downloads/stars.svg') no-repeat top left;
+    background: url('images/stars.svg') no-repeat top left;
   }
 
   .originalityRating label{
@@ -81,7 +81,7 @@ nav {
     padding: 48px 0 0;
     color: white;
     overflow: hidden;
-    background: url('file:///Users/margaretcamilletti/Downloads/stars.svg') no-repeat top left;
+    background: url('images/stars.svg') no-repeat top left;
   }
 
   .accuracyRating label{
@@ -90,7 +90,7 @@ nav {
     color: white;
     padding: 48px 0 0;
     overflow: hidden;
-    background: url('file:///Users/margaretcamilletti/Downloads/stars.svg') no-repeat top left;
+    background: url('images/stars.svg') no-repeat top left;
   }
 
 .castingRating:not(:hover) input:indeterminate + label,
