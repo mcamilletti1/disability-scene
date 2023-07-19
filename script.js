@@ -1,12 +1,12 @@
 
 
 const showAllMovies = async () => {
-    const response = await axios.get(`http://disabilityscene.com/api/movies`)
+    const response = await axios.get(`https://disabilityscene.com/api/movies`)
     const allMovies = response.data
     const moviesLength = response.data.length
     const mostRecentTitle = allMovies[moviesLength-1].title
     const mostRecentId = allMovies[moviesLength-1]._id
-    const response3 = await axios.get(`http://disabilityscene.com/api/reviews/movieId/${mostRecentId}`)
+    const response3 = await axios.get(`https://disabilityscene.com/api/reviews/movieId/${mostRecentId}`)
     const reviewList = response3.data
     const reviewListLength = response3.data.length
     console.log(response3)
@@ -168,7 +168,7 @@ const searchButton = document.querySelector('#searchButton')
 
 const searchMovies = async (e) => {
     e.preventDefault()
-    const response = await axios.get('http://disabilityscene.com/api/movies')
+    const response = await axios.get('https://disabilityscene.com/api/movies')
     const allMovies = response.data
     searchBar = document.querySelector('#searchBar')
     movieList = document.querySelector('.movieList')
