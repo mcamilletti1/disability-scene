@@ -16,3 +16,7 @@ mongoose.connect(mongoURI, {
 .catch((error) => {
   console.error('Error connecting to MongoDB:', error);
 });
+
+const db = mongoose.connection
+
+module.exports = db
