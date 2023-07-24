@@ -21,7 +21,7 @@ const goback = document.querySelector('#goback')
 
 const createReview = async (e) => {
     e.preventDefault()
-    const response2 = await axios.get('https://disability-scene-api-production.up.railway.app/api/movies')
+    const response2 = await axios.get('https://disability-scene-api-production.up.railway.app/movies')
     const allMovies = response2.data
     const moviesLength = response2.data.length
     const mostRecentId = allMovies[moviesLength-1]._id
@@ -56,7 +56,7 @@ const createReview = async (e) => {
             accuracyInput = accuracyStars[i].value
         }
     }
-    await axios.post(`https://disability-scene-api-production.up.railway.app/api/reviews`, {
+    await axios.post(`https://disability-scene-api-production.up.railway.app/reviews`, {
             movie: mostRecentId,
             title: reviewTitle.value,
             reviewer_name: reviewerNameFL.value,
