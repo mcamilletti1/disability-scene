@@ -5,7 +5,7 @@ const showAllMovies = async () => {
     const allMovies = response.data
     const moviesLength = response.data.length
     const mostRecentTitle = allMovies[moviesLength-1].title
-    const mostRecentId = allMovies[moviesLength-1]._id
+    const mostRecentId = allMovies[moviesLength-1].id
     const response3 = await axios.get(`https://disability-scene-api-production.up.railway.app/movies/${mostRecentId}/reviews`)
     const reviewList = response3.data
     const reviewListLength = response3.data.length

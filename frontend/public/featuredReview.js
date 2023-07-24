@@ -24,7 +24,7 @@ const createReview = async (e) => {
     const response2 = await axios.get('https://disability-scene-api-production.up.railway.app/movies')
     const allMovies = response2.data
     const moviesLength = response2.data.length
-    const mostRecentId = allMovies[moviesLength-1]._id
+    const mostRecentId = allMovies[moviesLength-1].id
     let castingInput = 0
     let castingStars = document.getElementsByName('castingRating')
     for (i=0; i < castingStars.length; i++) {

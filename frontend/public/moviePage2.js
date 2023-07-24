@@ -1,7 +1,7 @@
 const showMoviePage = async () => {
     const response = await axios.get('https://disability-scene-api-production.up.railway.app/movies')
     const allMovies = response.data
-    const movieId2 = allMovies[2]._id
+    const movieId2 = allMovies[2].id
     const response1 = await axios.get(`https://disability-scene-api-production.up.railway.app/movies/${movieId2}/cast`)
     const allActors = response1.data
     const actorsLength = response1.data.length
