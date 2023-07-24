@@ -3,7 +3,7 @@ const searchButton = document.querySelector('#searchButton')
 
 const searchMovies = async (e) => {
     e.preventDefault()
-    const response = await axios.get('/api/movies')
+    const response = await axios.get('https://disability-scene-api-production.up.railway.app/api/movies')
     const allMovies = response.data
     searchBar = document.querySelector('#searchBar')
     movieList = document.querySelector('.movieList')

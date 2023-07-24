@@ -1,5 +1,5 @@
 const loadReviewPage = async () => {
-    const response = await axios.get(`/api/movies`)
+    const response = await axios.get(`https://disability-scene-api-production.up.railway.app/api/movies`)
     const allMovies = response.data
     const moviesLength = response.data.length
     const movieTitle = allMovies[4].title
@@ -19,7 +19,7 @@ let postReview = document.querySelector('#postReview')
 
 const createReview = async (e) => {
     e.preventDefault()
-    const response2 = await axios.get('/api/movies')
+    const response2 = await axios.get('https://disability-scene-api-production.up.railway.app/api/movies')
     const allMovies = response2.data
     const moviesLength = response2.data.length
     const movieId = allMovies[4]._id
@@ -57,13 +57,13 @@ const createReview = async (e) => {
     await axios.post(`/api/reviews`, {
             movie: movieId,
             title: reviewTitle.value,
-            reviewerName: reviewerNameFL.value,
-            reviewText: reviewTextbox.value,
+            reviewer_name: reviewerNameFL.value,
+            review_text: reviewTextbox.value,
             date: dateInput.value,
-            castingScore: castingInput,
-            characterScore: characterInput,
-            originalityScore: originalityInput,
-            accuracyScore: accuracyInput
+            casting_score: castingInput,
+            character_score: characterInput,
+            originality_score: originalityInput,
+            accuracy_score: accuracyInput
     })
     .then(function (response) {
         console.log(response.data)

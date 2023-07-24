@@ -1,12 +1,12 @@
 
 
 const showAllMovies = async () => {
-    const response = await axios.get(`/api/movies`)
+    const response = await axios.get(`https://disability-scene-api-production.up.railway.app/api/movies`)
     const allMovies = response.data
     const moviesLength = response.data.length
     const mostRecentTitle = allMovies[moviesLength-1].title
     const mostRecentId = allMovies[moviesLength-1]._id
-    const response3 = await axios.get(`/api/reviews/movieId/${mostRecentId}`)
+    const response3 = await axios.get(`https://disability-scene-api-production.up.railway.app/api/movies/${mostRecentId}/reviews`)
     const reviewList = response3.data
     const reviewListLength = response3.data.length
     console.log(response3)
@@ -36,10 +36,10 @@ const showAllMovies = async () => {
         let featuredOriginalityScore = 0
         let featuredAccuracyScore = 0
         for (let i=0; i < reviewListLength; i++)  {
-            featuredCastingScore += reviewList[i].castingScore
-            featuredCharacterScore += reviewList[i].characterScore
-            featuredOriginalityScore += reviewList[i].originalityScore
-            featuredAccuracyScore += reviewList[i].accuracyScore
+            featuredCastingScore += reviewList[i].casting_score
+            featuredCharacterScore += reviewList[i].character_score
+            featuredOriginalityScore += reviewList[i].originality_score
+            featuredAccuracyScore += reviewList[i].accuracy_score
         }
 
         featuredCastingScore /= reviewListLength
@@ -168,7 +168,7 @@ const searchButton = document.querySelector('#searchButton')
 
 const searchMovies = async (e) => {
     e.preventDefault()
-    const response = await axios.get('/api/movies')
+    const response = await axios.get('https://disability-scene-api-production.up.railway.app/api/movies')
     const allMovies = response.data
     searchBar = document.querySelector('#searchBar')
     movieList = document.querySelector('.movieList')

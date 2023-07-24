@@ -1,5 +1,5 @@
 const express = require('express');
-const db = require('./db');
+const db = require(`./backend/db`);
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
@@ -9,7 +9,7 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
-const AppRouter = require('./routes/appRouter.js')
+const AppRouter = require(`./backend/routes/appRouter.js`)
 
 const PORT = process.env.PORT || 3001;
 

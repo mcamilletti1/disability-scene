@@ -1,8 +1,8 @@
 const showMoviePage = async () => {
-    const response = await axios.get('/api/movies')
+    const response = await axios.get('https://disability-scene-api-production.up.railway.app/api/movies')
     const allMovies = response.data
     const movieId0 = allMovies[0]._id
-    const response1 = await axios.get(`/api/casts/movieId/${movieId0}`)
+    const response1 = await axios.get(`https://disability-scene-api-production.up.railway.app/api/movies/${movieId0}/cast`)
     const allActors = response1.data
     const actorsLength = response1.data.length
     for (let i=0; i < actorsLength; i++) {
@@ -12,16 +12,16 @@ const showMoviePage = async () => {
         actorList.innerHTML += `<li><img class="individualActorImage" aria-hidden="true" width="100px" height="120px" src="${allActors[i].img}"> <p class="individualActor">${allActors[i].name}</p><p class="individualCharacter">${allActors[i].title}</p></li>`
     }
 
-    const response2 = await axios.get(`/api/reviews/movieId/${movieId0}`)
+    const response2 = await axios.get(`https://disability-scene-api-production.up.railway.app/api/movies/${movieId0}/reviews`)
     const allReviews = response2.data
     const reviewsLength = response2.data.length
     for (let i=0; i < reviewsLength; i++) {
         reviewList = document.querySelector('.reviewList')
         reviewList.innerHTML += `<li><section height="200px" width="800px" class="review">
         <p class="reviewTitle">${allReviews[i].title}</p>
-        <p class="reviewerName">${allReviews[i].reviewerName}</p>
+        <p class="reviewerName">${allReviews[i].reviewer_name}</p>
         <p class="reviewDate">${allReviews[i].date}</p>
-        <p class="reviewText">${allReviews[i].reviewText}</p>
+        <p class="reviewText">${allReviews[i].review_text}</p>
     </section></li>`
     }
 
@@ -45,10 +45,10 @@ const showMoviePage = async () => {
         let OriginalityScore = 0
         let AccuracyScore = 0
         for (let i=0; i < reviewsLength; i++)  {
-            CastingScore += allReviews[i].castingScore
-            CharacterScore += allReviews[i].characterScore
-            OriginalityScore += allReviews[i].originalityScore
-            AccuracyScore += allReviews[i].accuracyScore
+            CastingScore += allReviews[i].casting_score
+            CharacterScore += allReviews[i].character_score
+            OriginalityScore += allReviews[i].originality_score
+            AccuracyScore += allReviews[i].accuracy_score
         }
 
         CastingScore /= reviewsLength
