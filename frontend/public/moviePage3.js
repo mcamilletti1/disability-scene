@@ -1,8 +1,8 @@
 const showMoviePage = async () => {
-    const response = await axios.get('https://disability-scene-api-production.up.railway.app/api/movies')
+    const response = await axios.get('disability-scene-api-production.up.railway.app/api/movies')
     const allMovies = response.data
     const movieId3 = allMovies[3]._id
-    const response1 = await axios.get(`https://disability-scene-api-production.up.railway.app/api/movies/${movieId3}/cast`)
+    const response1 = await axios.get(`disability-scene-api-production.up.railway.app/api/movies/${movieId3}/cast`)
     const allActors = response1.data
     const actorsLength = response1.data.length
     for (let i=0; i < actorsLength; i++) {
@@ -12,7 +12,7 @@ const showMoviePage = async () => {
         actorList.innerHTML += `<li><img class="individualActorImage" aria-hidden="true" width="100px" height="120px" src="${allActors[i].img}"> <p class="individualActor">${allActors[i].name}</p><p class="individualCharacter">${allActors[i].title}</p></li>`
     }
 
-    const response2 = await axios.get(`https://disability-scene-api-production.up.railway.app/api/movies/${movieId3}/reviews`)
+    const response2 = await axios.get(`disability-scene-api-production.up.railway.app/api/movies/${movieId3}/reviews`)
     const allReviews = response2.data
     const reviewsLength = response2.data.length
     for (let i=0; i < reviewsLength; i++) {
