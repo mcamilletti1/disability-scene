@@ -1,10 +1,14 @@
+body {
+    background-color: #F6F6F6;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
 #navBar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    margin-top: 50px;
+    margin: 10px 20px;
 }
 
 #logo {
@@ -15,33 +19,31 @@ nav {
     display: flex;
     align-items: row;
     justify-content: space-between;
-    margin-right: 100px;
+    margin-right: 20px;
     font-family: 'Quicksand', sans-serif;
 }
 
 #column1 {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
-    padding-top: 30px;
+    margin-right: 10px;
+    padding-top: 20px;
 }
 
 #column2 {
     display: flex;
     flex-direction: column;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 h1 {
     font-family: 'Quicksand', sans-serif;
 }
 
-
 .movieInfo {
     display: flex;
     flex-direction: row;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin: 0 20px;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
     font-style: bold;
@@ -52,8 +54,6 @@ main {
     flex-direction: row;
 }
 
-
-
 #scoreStars {
     display: flex;
     flex-direction: row;
@@ -62,23 +62,22 @@ main {
 .castInfo {
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 20px;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 #castLabel {
-    margin-left: 100px;
-    margin-top: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .reviewInfo {
-    margin-left: 100px;
+    margin: 0 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -87,15 +86,14 @@ footer {
     color: black;
     height: 50px;
     padding-top: 5px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 20px;
 }
 
 .review {
     background-color: #d9d9d9;
     border: solid 2px #58B0CC;
     border-radius: 5px;
-    width: 1050px;
+    width: 100%;
     height: 200px;
     padding: 2px 2px 0 10px;
 }
@@ -104,7 +102,7 @@ footer {
     border: solid 2px #58B0CC;
     height: 134px;
     width: 162px;
-    margin-right: 40px;
+    margin: 0 10px;
     padding-top: 5px;
     border-radius: 5px;
 }
@@ -116,60 +114,53 @@ footer {
     text-align: center;
 }
 
-
-body {
-    background-color: #F6F6F6;
-    font-family: 'Quicksand', sans-serif;
-}
-
 #scorePercent {
     color: #338D25;
-    font-size: 48px;
+    font-size: 24px;
     margin: 0;
     text-align: center;
 }
 
-
 #numReviews {
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
     text-align: center;
 }
 
 #dateGenreDuration {
-    font-size: 15px;
+    font-size: 13px;
     margin: 0;
     padding: 0;
 }
 
 #movieTitle {
-    font-size: 25px;
+    font-size: 20px;
     font-style: bold;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 #movieDescription {
-    font-size: 15px;
+    font-size: 13px;
     font-style: bold;
     color: rgb(68, 67, 67);
 }
 
 #searchButton {
-    margin-left: 50px;
+    margin-left: 10px;
     border-color: #F6F6F6;
     background-color: #F6F6F6;
     border-radius: 5px;
-    height: 27px;
+    height: 22px;
 }
 
 #searchBar {
-    height: 22px;
+    height: 18px;
     border-radius: 5px;
 }
 
 #tvButton {
-    margin-left: 50px;
+    margin-left: 10px;
     background-color: #F6F6F6;
     border-color: #F6F6F6;
     border-radius: 5px;
@@ -179,27 +170,14 @@ body {
     border-color: #F6F6F6;
     background-color: #F6F6F6;
     border-radius: 5px;
-    height: 30px;
+    height: 25px;
 }
 
-#moviesButton:hover {
-    cursor: pointer;
-    color: #58B0CC;
-    border-color: #58B0CC;
-}
-
-#tvButton:hover {
-    cursor: pointer;
-    color: #58B0CC;
-    border-color: #58B0CC;
-}
-
-#searchButton:hover {
-    cursor: pointer;
-    border-color: #58B0CC;
-}
-
+#moviesButton:hover,
+#tvButton:hover,
+#searchButton:hover,
 #searchBar:hover {
+    cursor: pointer;
     border-color: #58B0CC;
 }
 
@@ -211,23 +189,23 @@ body {
 
 #scoreTitle {
     font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 #scorePercent {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 #actionImage {
-    width: 40px;
-    height: 20px;
-    margin-top: 10px;
+    width: 30px;
+    height: 15px;
+    margin-top: 5px;
 }
 
 #reviewButton {
-    height: 40px;
-    width: 216px;
+    height: 30px;
+    width: 180px;
     color: white;
     background-color: #58B0CC;
     border-radius: 5px;
@@ -243,23 +221,25 @@ body {
 
 .tags {
     border-left: solid 2px black;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
 }
 
 #tagsHeader {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
 }
 
 #tagsSubheader {
-    font-size: 15px;
+    font-size: 13px;
 }
 
-#disabilities, #themes,  #genre {
-    font-size: 14px;
+#disabilities,
+#themes,
+#genre {
+    font-size: 12px;
 }
 
 #starInfo {
@@ -269,12 +249,12 @@ body {
 }
 
 .actorName {
-    font-size: 16px;
+    font-size: 14px;
     color: black;
 }
 
 .characterName {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     color: rgb(68, 67, 67);
 }
@@ -282,29 +262,24 @@ body {
 .reviewButton {
     border-color: #d9d9d9;
     border-radius: 5px;
-    height: 30px;
+    height: 25px;
     float: right;
-    margin-right: 10px;
-}
-
-.reviewButton:hover {
-    cursor: pointer;
-    border-color: #58B0CC;
-    color: #58B0CC;
+    margin-right: 5px;
 }
 
 .actorList {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     list-style: none;
     overflow: scroll;
-    margin-right: none;
+    margin: 0;
+    padding: 0;
 }
 
 .individualActorImage {
     border-radius: 5px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .individualActorImage:hover {
@@ -314,15 +289,11 @@ body {
 
 .individualActor:hover {
     color: #58B0CC;
-    margin-right: 20px;
-}
-
-.individualCharacter {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 #reviewsLabel {
-    margin-left: 100px;
+    margin-left: 20px;
 }
 
 .reviewList {
@@ -332,5 +303,28 @@ body {
 
 .review {
     overflow: scroll;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    navBar {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 20px; 
+    }
+
+    #navBar {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
 }
