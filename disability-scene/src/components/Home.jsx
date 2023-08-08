@@ -1,5 +1,14 @@
+import MovieInfo from './MovieInfo'
+import MovieCarousel from './MovieCarousel'
+
+
 const Home = () => {
-    return <h2>This is the Home page</h2>
+    return (
+        <div className ="home">
+            <MovieCarousel />
+            <MovieInfo />
+        </div>
+    )
 }
 
 export default Home
