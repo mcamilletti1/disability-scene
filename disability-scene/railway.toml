@@ -6,3 +6,9 @@ command = "npm install && npm run build"
 
 [deploy]
 command = "npm start"
+
+[expose]
+
+port = 5173
+
+as= "web"
