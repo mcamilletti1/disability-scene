@@ -1,0 +1,8 @@
+[env]
+RAILS_ENV = "production"
+
+[build]
+command = "npm install && npm run build"
+
+[deploy]
+command = "npm start"
