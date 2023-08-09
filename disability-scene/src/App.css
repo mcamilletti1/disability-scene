@@ -3,7 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   margin-bottom: 0;
+  background-color: #F6F6F6;
   padding-bottom: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+html {
+  background-color: #F6F6F6;
 }
 
 .carousel {
@@ -17,7 +23,7 @@
 
 .movieList {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   list-style: none;
   margin-right: 20px;
@@ -31,6 +37,12 @@
 .individualImage:hover {
   filter: brightness(0.8);
   border: solid 2px #58B0CC;
+  cursor: pointer;
+}
+
+.individualTitle:hover {
+  color: #58B0CC;
+  cursor: pointer;
 }
 
 footer {
@@ -104,5 +116,259 @@ footer {
   align-items: row;
   justify-content: space-between;
 }
+
+#reviewButton {
+  border-color: #d9d9d9;
+  border-radius: 5px;
+  margin-bottom: 0;
+  height: 40px;
+}
+
+#reviewButton:hover {
+  cursor: pointer;
+  border-color: #58B0CC;
+  color: #58B0CC;
+}
+
+#scoreStars {
+  display: flex;
+  flex-direction: row;
+}
+
+.scoreInfo {
+  border: solid 2px #58B0CC;
+  height: 160px;
+  width: 162px;
+  margin-right: 40px;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+
+#sceneScore {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  text-align: center;
+}
+
+#scorePercent {
+  color: #338D25;
+  font-size: 48px;
+  margin: 0;
+  text-align: center;
+}
+
+
+#numReviews {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+#dateGenreDuration {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+#movieTitle {
+  font-size: 25px;
+  font-style: bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#movieDescription {
+  font-size: 14px;
+  font-style: bold;
+  color: rgb(68, 67, 67);
+}
+
+#dateGenreDuration {
+  color: rgb(68, 67, 67);
+  font-style: bold;
+  margin-top: 0;
+}
+
+#scoreTitle {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#scorePercent {
+  margin-top: 10px;
+}
+
+
+
+.tags {
+  border-left: solid 2px black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+#tagsHeader {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+#tagsSubheader {
+  font-size: 15px;
+}
+
+#disabilities, #themes,  #genre {
+  font-size: 14px;
+}
+
+#starInfo {
+  margin-top: 0;
+  padding-top: 0;
+  margin-right: 0;
+  padding-right: 0
+}
+
+.individualImage {
+  border-radius: 5px;
+}
+
+.individualImage:hover {
+  filter: brightness(0.8);
+  border: solid 2px #58B0CC;
+}
+
+.individualTitle:hover {
+  color: #58B0CC;
+}
+
+
+#column1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+#column2 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+.movieInfo {
+  display: flex;
+    flex-direction: row;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    font-style: bold;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+}
+
+#actionImage {
+  width: 50px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.star-line {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.star-title {
+  font-size: 13px;
+}
+
+.stars {
+  margin: 0;
+  padding: 0;
+}
+
+
+.myForm {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+  
+  .myForm * {
+  box-sizing: border-box;
+  }
+  
+  .myForm fieldset {
+  border: none;
+  padding: 0;
+  }
+  
+  .myForm legend,
+  .myForm label {
+  padding: 0;
+  font-weight: bold;
+  }
+  
+  .myForm label.choice {
+  font-size: 0.9em;
+  font-weight: normal;
+  }
+  
+  .myForm input[type="text"],
+  .myForm input[type="tel"],
+  .myForm input[type="email"],
+  .myForm input[type="datetime-local"],
+  .myForm select,
+  .myForm textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #58B0CC;;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 0.9em;
+  padding: 0.3em;
+  }
+  
+  .myForm textarea {
+  height: 100px;
+  }
+  
+  .myForm button {
+  padding: 1em;
+  border-radius: 0.5em;
+  background: #eee;
+  border: none;
+  font-weight: bold;
+  margin-top: 1em;
+  }
+  
+  .myForm button:hover {
+  background: #ccc;
+  cursor: pointer;
+  }
+
+  #starButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+
+
+
+
+
+
 
 

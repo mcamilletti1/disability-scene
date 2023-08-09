@@ -34,6 +34,7 @@ const MovieCarousel = () => {
                    movies.map((movie, id) => (
                     <div key={id} className="movieList" onClick={() => showMovie(id)}>
                         <img className="individualImage" aria-hidden="true" width="203px" height="258px" src={movie.img}></img>
+                        <p className="individualTitle">{movie.title}</p>
                     </div>
                    ))
                 }

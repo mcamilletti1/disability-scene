@@ -71,38 +71,59 @@ const MovieInfo = () => {
     }, [reviews]);
 
     const reviewsLength = reviews.length
+
+    const id = movie.id
     
 
-    //let navigate = useNavigate()
+    let navigate = useNavigate()
 
-    //const showMovie = (id) => {
-        //navigate(`${id}`)
-    //}
+
+    const showReviewPage = (id) => {
+        navigate(`leaveAReview/${id}`)
+    }
 
 
     return (
-        <section className="movie-info">
-            <section className="movieInfo">
+        <section className="movieInfo">
+            <section id="main">
                 <section id="column1">
                     <h3>Featured Movie: </h3>
                     <img id="featuredPoster" src={movie.img} width="203px" height="300px" alt="Movie Poster"/>
                 </section> 
                 <section id="column2">
-                    <h4 id="movieTitle">{movie.title} ({movie.year})</h4> 
-                    <p id="dateGenreDuration">{movie.year} | {movie.genre} | {movie.duration} mins</p>
-                    <p id="movieDescription">{movie.description}</p>
-                </section>
-                <section id="scoreStars" height="100px">
-                    <section id="sceneScore">
-                        <br></br>
-                        <p id="scorePercent">{roundedSceneScore}%</p>
-                        <p id="numReviews">(Based on {reviewsLength} reviews)</p>
-                    </section> 
-                    <section className="starInfo">
-                        <p>Authentic Casting: <RatingComponent alt={featuredCastingScore} score={featuredCastingScore}/></p>
-                        <p>Representative Characters: <RatingComponent alt={featuredCharacterScore} score={featuredCharacterScore}/></p>
-                        <p>Originality: <RatingComponent score={featuredOriginalityScore}/></p>
-                        <p>Accuracy: <RatingComponent score={featuredAccuracyScore}/></p>
+                    <section>
+                        <h4 id="movieTitle">{movie.title} ({movie.year})</h4> 
+                        <p id="dateGenreDuration">{movie.year} | {movie.genre} | {movie.duration} mins</p>
+                        <p id="movieDescription">{movie.description}</p>
+                    </section>
+                    <section id="scoreStars" height="100px">
+                        <section className="scoreInfo">
+                            <section id="sceneScore">
+                                <img src="src/assets/movieaction.png" width="40px" height="28px" aria-hidden="true"></img>
+                                <p id="scoreTitle">Scene Score:</p>
+                            </section>
+                            <br></br>
+                            <p id="scorePercent">{roundedSceneScore}%</p>
+                            <p id="numReviews">(Based on {reviewsLength} reviews)</p>
+                        </section>
+                        <section className="starInfo">
+                            <section className="star-line">
+                                <p className="star-title">Authentic Casting: </p>
+                                <RatingComponent className="stars" alt={featuredCastingScore} score={featuredCastingScore}/>
+                            </section>
+                            <section className="star-line">
+                                <p className="star-title">Representative Characters: </p>
+                                <RatingComponent className="stars" alt={featuredCharacterScore} score={featuredCharacterScore}/>
+                            </section>
+                            <section className="star-line">
+                                <p className="star-title">Originality: </p>
+                                <RatingComponent className="stars" score={featuredOriginalityScore}/>
+                            </section>
+                            <section className="star-line">
+                                <p className="star-title">Accuracy: </p>
+                                <RatingComponent className="stars" score={featuredAccuracyScore}/>
+                            </section>
+                        </section>
                     </section>
                 </section>
             </section>
@@ -114,7 +135,7 @@ const MovieInfo = () => {
                 <p>{movie.themes}</p>
                 <p className="tagsSubheader"><strong>Genre</strong></p>
                 <p id="genre">{movie.genre}</p>
-                <Link to="leaveAReview"><button id="reviewButton" width="216px" height="40px" aria-label="Submit a review">SUBMIT A REVIEW</button></Link>
+                <button key={id} onClick={()=>showReviewPage(id)} id="reviewButton" width="216px" height="40px" aria-label="Submit a review">SUBMIT A REVIEW</button>
             </aside>
         </section>
     )
