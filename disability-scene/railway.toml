@@ -1,14 +1,7 @@
-[env]
-RAILS_ENV = "production"
+name = "disability-scene"
 
-[build]
-command = "npm install && npm run build"
+framework = "node"
 
-[deploy]
-command = "npm run dev --omit=dev"
-
-[expose]
-
-port = 5173
-
-as= "web"
+env = {
+    NODE_ENV = "production"
+}
