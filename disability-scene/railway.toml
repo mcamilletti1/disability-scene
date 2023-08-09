@@ -5,7 +5,7 @@ RAILS_ENV = "production"
 command = "npm install && npm run build"
 
 [deploy]
-command = "npm start"
+command = "npm run dev --omit=dev"
 
 [expose]
 
