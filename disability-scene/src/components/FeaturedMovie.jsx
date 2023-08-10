@@ -3,9 +3,8 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import RatingComponent from './RatingComponent'
 import { Link } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
 
-const MovieInfo = () => {
+const FeaturedMovie = () => {
     const [movie, setMovie] = useState('')
     const [reviews, setReviews] = useState([])
     const [roundedSceneScore, setRoundedSceneScore] = useState(0);
@@ -13,14 +12,16 @@ const MovieInfo = () => {
     const [featuredCharacterScore, setFeaturedCharacterScore] = useState(0);
     const [featuredOriginalityScore, setFeaturedOriginalityScore] = useState(0);
     const [featuredAccuracyScore, setFeaturedAccuracyScore] = useState(0);
-    let { id } = useParams()
 
 
     useEffect(() => {
         const getMovie = async () => {
             try {
-                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movies/${id}`);
-                const featuredMovie = response.data;
+                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movies`);
+                const data = response.data;
+                const moviesLength = data.length;
+                const response2 = await axios.get(`https://disability-scene-api-production.up.railway.app/movies/${moviesLength}`);
+                const featuredMovie = response2.data;
                 setMovie(featuredMovie);
             } catch (error) {
                 console.error("Error fetching movie:", error);
@@ -32,7 +33,7 @@ const MovieInfo = () => {
     useEffect(() => {
         const getReviews = async () => {
             try {
-                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movies/${id}/reviews`);
+                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movies/${movie.id}/reviews`);
                 const data = response.data;
                 setReviews(data);
             } catch (error) {
@@ -71,6 +72,7 @@ const MovieInfo = () => {
 
     const reviewsLength = reviews.length
 
+    const id = movie.id
     
 
     let navigate = useNavigate()
@@ -139,4 +141,4 @@ const MovieInfo = () => {
     )
 }
 
-export default MovieInfo
+export default FeaturedMovie
