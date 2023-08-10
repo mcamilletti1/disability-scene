@@ -365,8 +365,7 @@ footer {
   }
 
   .grid {
-    display: flex;
-    flex-direction: row;
+    display: grid;
   }
   
 
