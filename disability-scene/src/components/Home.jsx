@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 
 
 const Home = ({ showSearch }) => {
+    console.log('showSearch:', showSearch)
 
     return (
         <div className ="home">

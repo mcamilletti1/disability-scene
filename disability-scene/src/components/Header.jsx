@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 const Header = ({ onSearchButtonClick }) => {
     const handleFormSubmit = (e) => {
         e.preventDefault()
+        console.log('Search button clicked')
         onSearchButtonClick()
     }
 

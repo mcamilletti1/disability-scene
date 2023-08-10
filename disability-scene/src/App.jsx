@@ -11,6 +11,7 @@ function App() {
   const [showSearch, setShowSearch] = useState(false)
 
   const handleSearchButtonClick = () => {
+    console.log('handleSearchButtonClick called')
     setShowSearch(true)
   }
 

@@ -8,6 +8,7 @@ const Search = () => {
 
   const searchMovies = async (e) => {
     e.preventDefault()
+    console.log('searchMovies function called')
     try {
       setLoading(true);
       const response = await axios.get('https://disability-scene-api-production.up.railway.app/movies');
