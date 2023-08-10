@@ -7,11 +7,11 @@ import MoviePage from './MoviePage'
 import PropTypes from 'prop-types'
 //import ActorPage from './ActorPage'
 
-const Main = ({ showSearch }) => {
+const Main = ({ showSearch, searchText }) => {
     return (
         <div className ="routes-container">
             <Routes>
-                <Route path="/" element={<Home showSearch={showSearch} />} />
+                <Route path="/" element={<Home showSearch={showSearch} searchText={searchText}/>} />
                 <Route path="/movies" element={<Movies />} />
                 <Route path="/TVshows" element={<TVShows />} />
                 <Route path="/leaveAReview/:id" element={<LeaveAReview />} />
@@ -22,7 +22,8 @@ const Main = ({ showSearch }) => {
 }
 
 Main.propTypes = {
-    showSearch: PropTypes.bool.isRequired
+    showSearch: PropTypes.bool.isRequired,
+    searchText: PropTypes.string.isRequired
 }
 
 

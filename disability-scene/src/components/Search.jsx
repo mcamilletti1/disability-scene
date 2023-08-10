@@ -1,14 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types'
 
-const Search = () => {
-  const [searchText, setSearchText] = useState('');
+const Search = ({ searchText }) => {
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const searchMovies = async (e) => {
-    e.preventDefault()
-    console.log('searchMovies function called')
+  useEffect(() => {
+  const searchMovies = async () => {
     try {
       setLoading(true);
       const response = await axios.get('https://disability-scene-api-production.up.railway.app/movies');
@@ -22,8 +21,13 @@ const Search = () => {
     } finally {
       setLoading(false);
     }
-  };
-  searchMovies()
+  }
+
+  if (searchText) {
+    searchMovies()
+  }
+}, [searchText])
+
 
 
   return (
@@ -46,6 +50,10 @@ const Search = () => {
     </div>
   );
 };
+
+Search.propTypes = {
+    searchText: PropTypes.string.isRequired,
+}
 
 
 

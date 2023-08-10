@@ -9,9 +9,11 @@ import { useState } from 'react'
 
 function App() {
   const [showSearch, setShowSearch] = useState(false)
+  const [searchText, setSearchText] = useState('')
 
-  const handleSearchButtonClick = () => {
+  const handleSearchButtonClick = (text) => {
     console.log('handleSearchButtonClick called')
+    setSearchText(text)
     setShowSearch(true)
   }
 
@@ -23,7 +25,7 @@ function App() {
       </header>
 
       <main className="app-main">
-        <Main showSearch={showSearch} />
+        <Main showSearch={showSearch} searchText={searchText}/>
       </main>
 
       <footer className="footer">
