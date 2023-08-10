@@ -22,7 +22,7 @@ const MovieCarousel = () => {
 
     let navigate = useNavigate()
 
-    let { id } = id-1
+    let { id } = id+1
 
     const showMovie = (id) => {
         navigate(`moviePage/${id}`)
