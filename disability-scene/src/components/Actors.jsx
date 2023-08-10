@@ -8,6 +8,8 @@ const Actors = () => {
 
     let { id } = useParams()
 
+    console.log(id)
+
     const [actors, setActors] = useState([])
 
 
@@ -23,6 +25,8 @@ const Actors = () => {
         }
         getActors();
     }, [actors, id])
+
+    console.log(actors)
 
     let navigate = useNavigate()
 
