@@ -1,4 +1,9 @@
 import Nav from './Nav'
+import PropTypes from 'prop-types'
+
+Header.propTypes = {
+    onSearchButtonClick: PropTypes.func.isRequired
+}
 
 const Header = ({ onSearchButtonClick }) => {
     return (

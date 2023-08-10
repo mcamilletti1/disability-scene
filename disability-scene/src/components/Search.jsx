@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 
 const Search = () => {
@@ -6,7 +6,8 @@ const Search = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const searchMovies = async () => {
+  const searchMovies = async (e) => {
+    e.preventDefault()
     try {
       setLoading(true);
       const response = await axios.get('https://disability-scene-api-production.up.railway.app/movies');
@@ -21,6 +22,7 @@ const Search = () => {
       setLoading(false);
     }
   };
+
 
   return (
     <div className="movie-search">
