@@ -1,7 +1,0 @@
-name = "disability-scene"
-
-framework = "node"
-
-env = {
-    NODE_ENV = "production"
-}
