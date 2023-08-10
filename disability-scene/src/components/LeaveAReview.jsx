@@ -48,7 +48,7 @@ const LeaveAReview = () => {
         };
 
         try {
-            const response = await axios.post('http://disability-scene-api-production.up.railway.app/reviews', reviewData);
+            const response = await axios.post('https://disability-scene-api-production.up.railway.app/reviews', reviewData);
             console.log(response.data);
         } catch (error) {
             console.error(error);
