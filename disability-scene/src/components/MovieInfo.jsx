@@ -76,9 +76,7 @@ const MovieInfo = () => {
     let navigate = useNavigate()
 
 
-    const showReviewPage = (id) => {
-        navigate(`leaveAReview/${id}`)
-    }
+ 
 
 
     return (
@@ -132,7 +130,7 @@ const MovieInfo = () => {
                 <p>{movie.themes}</p>
                 <p className="tagsSubheader"><strong>Genre</strong></p>
                 <p id="genre">{movie.genre}</p>
-                <button key={id} onClick={()=>showReviewPage(id)} id="reviewButton" width="216px" height="40px" aria-label="Submit a review">SUBMIT A REVIEW</button>
+                <Link to={`/leaveAReview/${id}`}><button key={id} id="reviewButton" width="216px" height="40px" aria-label="Submit a review">SUBMIT A REVIEW</button></Link>
             </aside>
         </section>
     )
