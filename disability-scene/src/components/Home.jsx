@@ -3,9 +3,6 @@ import FeaturedMovie from './FeaturedMovie'
 import Search from './Search'
 import PropTypes from 'prop-types'
 
-Home.propTypes = {
-    showSearch: PropTypes.bool.isRequired
-}
 
 
 const Home = ({ showSearch }) => {
@@ -16,6 +13,10 @@ const Home = ({ showSearch }) => {
             <FeaturedMovie />
         </div>
     )
+}
+
+Home.propTypes = {
+    showSearch: PropTypes.bool.isRequired
 }
 
 export default Home
