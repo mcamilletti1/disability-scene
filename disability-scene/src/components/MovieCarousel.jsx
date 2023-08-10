@@ -22,7 +22,6 @@ const MovieCarousel = () => {
 
     let navigate = useNavigate()
 
-    let { id } = id+1
 
     const showMovie = (id) => {
         navigate(`moviePage/${id}`)
@@ -34,7 +33,7 @@ const MovieCarousel = () => {
             <div className="carousel">
                 {
                    movies.map((movie, id) => (
-                    <div key={id} className="movieList" onClick={() => showMovie(id)}>
+                    <div key={movie.id} className="movieList" onClick={() => showMovie(movie.id)}>
                         <img className="individualImage" aria-hidden="true" width="203px" height="258px" src={movie.img}></img>
                         <p className="individualTitle">{movie.title}</p>
                     </div>
