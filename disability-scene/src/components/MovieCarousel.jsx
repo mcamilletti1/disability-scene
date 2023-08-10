@@ -23,7 +23,7 @@ const MovieCarousel = () => {
     let navigate = useNavigate()
 
     const showMovie = (id) => {
-        navigate(`${id}`)
+        navigate(`moviePage/${id}`)
     }
     
     return ( 
