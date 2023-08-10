@@ -23,6 +23,7 @@ const Search = () => {
       setLoading(false);
     }
   };
+  searchMovies()
 
 
   return (
