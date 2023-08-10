@@ -23,7 +23,7 @@ const LeaveAReview = () => {
 
     useEffect(() => {
         loadReviewPage();
-    }, []);
+    }, [id]);
 
     console.log(movie)
 
