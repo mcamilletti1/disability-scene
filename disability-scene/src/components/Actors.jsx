@@ -22,7 +22,7 @@ const Actors = () => {
             }
         }
         getActors();
-    }, [actors])
+    }, [actors, id])
 
     let navigate = useNavigate()
 
