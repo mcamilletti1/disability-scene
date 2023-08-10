@@ -1,12 +1,14 @@
-import MovieInfo from './MovieInfo'
 import MovieCarousel from './MovieCarousel'
 import FeaturedMovie from './FeaturedMovie'
+import Search from './Search'
 
 
-const Home = () => {
+
+const Home = ({ showSearch }) => {
+
     return (
         <div className ="home">
-            <MovieCarousel />
+            {showSearch ? <Search /> : <MovieCarousel />}
             <FeaturedMovie />
         </div>
     )

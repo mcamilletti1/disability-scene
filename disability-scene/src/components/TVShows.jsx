@@ -1,5 +1,5 @@
 const TVShows = () => {
-    return <h2>This is TVShows</h2>
+    return <h2>TV Shows coming soon!</h2>
 }
 
 export default TVShows
