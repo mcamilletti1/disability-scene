@@ -20,7 +20,6 @@ const Movies = () => {
     }, [movies])
 
    let { id } = useParams()
-   console.log(id)
     
     return ( 
         <div className="movies-grid">
@@ -29,7 +28,7 @@ const Movies = () => {
                 {
                    movies.map((movie) => (
                     <div key={id} className="movieList">
-                        <Link to={`/moviePage/${id}}`}><img className="individualImage" aria-hidden="true" width="203px" height="258px" src={movie.img}></img></Link>
+                        <Link to={`/moviePage/${id}`}><img className="individualImage" aria-hidden="true" width="203px" height="258px" src={movie.img}></img></Link>
                         <p className="individualTitle">{movie.title}</p>
                     </div>
                    ))
