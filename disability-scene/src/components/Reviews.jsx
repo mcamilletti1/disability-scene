@@ -36,9 +36,9 @@ const Reviews = () => {
                 {
                    reviews.map((review) => (
                     <section key={review.id} onClick={() => showReview(review.id)} height="200px" width="800px" className="review">
-                        <p className="reviewTitle">{review.title}</p>
-                        <p className="reviewerName">{review.reviewer_name}</p>
-                        <p className="reviewDate">{review.date}</p>
+                        <p className="reviewTitle"><strong>{review.title}</strong></p>
+                        <p className="reviewerName"><strong>{review.reviewer_name}</strong></p>
+                        <p className="reviewDate"><strong>{review.date}</strong></p>
                         <p className="reviewText">{review.review_text}</p>
                     </section>
                    ))
