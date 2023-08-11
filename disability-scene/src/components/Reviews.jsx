@@ -30,6 +30,7 @@ const Reviews = () => {
     
     return ( 
         <div className="review-grid">
+            <h4>Reviews</h4>
         <div className="reviewInfo">
             <section className="reviewList">
                 {
