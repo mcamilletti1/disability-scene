@@ -17,6 +17,7 @@ const Actors = () => {
         const getActors = async () => {
             try {
                 const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movie/${id}/cast`);
+                console.log("API Response:", response.data)
                 const data = response.data;
                 setActors(data);
             } catch (error) {
@@ -24,7 +25,7 @@ const Actors = () => {
             }
         }
         getActors();
-    }, [])
+    }, [id])
 
     console.log(actors)
 
