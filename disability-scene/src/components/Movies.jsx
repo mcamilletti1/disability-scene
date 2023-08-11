@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const Movies = () => {
     const [movies, setMovies] = useState([])
@@ -19,7 +19,7 @@ const Movies = () => {
         getMovies();
     }, [movies])
 
-   
+   let { id } = useParams()
     
     return ( 
         <div className="movies-grid">
