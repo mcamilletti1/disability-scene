@@ -16,7 +16,7 @@ const Actors = () => {
     useEffect(() => {
         const getActors = async () => {
             try {
-                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movie/${id}/cast`);
+                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movie/${id}/cast/`);
                 console.log("API Response:", response.data)
                 const data = response.data;
                 setActors(data);
@@ -25,7 +25,7 @@ const Actors = () => {
             }
         }
         getActors();
-    }, [id])
+    }, [actors, id])
 
     console.log(actors)
 
