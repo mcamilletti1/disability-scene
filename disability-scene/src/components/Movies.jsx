@@ -27,8 +27,8 @@ const Movies = () => {
             <div className="grid">
                 {
                    movies.map((movie) => (
-                    <div key={movie.id} className="movieList">
-                        <Link to={`/moviePage/${movie.id}}`}><img className="individualImage" aria-hidden="true" width="203px" height="258px" src={movie.img}></img></Link>
+                    <div key={id} className="movieList">
+                        <Link to={`/moviePage/${id}}`}><img className="individualImage" aria-hidden="true" width="203px" height="258px" src={movie.img}></img></Link>
                         <p className="individualTitle">{movie.title}</p>
                     </div>
                    ))
