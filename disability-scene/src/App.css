@@ -370,6 +370,17 @@ footer {
     justify-content: center;
     gap: 10px;
   }
+
+  .review {
+    background-color: #d9d9d9;
+    border: solid 2px #d9d9d9;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 2px grey;
+    width: 500px;
+    height: 200px;
+    padding: 2px 10px 10px 10px;
+
+  }
   
 
 
