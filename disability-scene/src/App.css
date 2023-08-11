@@ -398,6 +398,11 @@ footer {
 
 .reviewTitle, .reviewName, .reviewDate {
   font-weight: bold;
+  color: black;
+}
+
+.reviewText {
+  color: darkgray;
 }
   
 
