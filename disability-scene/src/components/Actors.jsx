@@ -24,7 +24,7 @@ const Actors = () => {
             }
         }
         getActors();
-    }, [actors, id])
+    }, [id])
 
     console.log(actors)
 
