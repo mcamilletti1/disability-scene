@@ -395,6 +395,10 @@ footer {
   list-style: none;
   overflow: scroll;
 }
+
+.reviewTitle, .reviewName, .reviewDate {
+  font-weight: bold;
+}
   
 
 
