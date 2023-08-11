@@ -20,6 +20,7 @@ const Movies = () => {
     }, [movies])
 
    let { id } = useParams()
+   console.log(id)
     
     return ( 
         <div className="movies-grid">
