@@ -16,6 +16,7 @@ const Main = ({ showSearch, searchText }) => {
                 <Route path="/TVshows" element={<TVShows />} />
                 <Route path="/leaveAReview/:id" element={<LeaveAReview />} />
                 <Route path="/moviePage/:id" element={<MoviePage />} />
+                <Route path="/movies/moviePage/:id" element={<MoviePage />} />
             </Routes>
         </div>
     )
