@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Movies = () => {
     const [movies, setMovies] = useState([])
@@ -19,12 +19,7 @@ const Movies = () => {
         getMovies();
     }, [movies])
 
-    let navigate = useNavigate()
-
-
-    const showMovie = (id) => {
-        navigate(`moviePage/${id}`)
-    }
+   
     
     return ( 
         <div className="movies-grid">
@@ -32,8 +27,8 @@ const Movies = () => {
             <div className="grid">
                 {
                    movies.map((movie) => (
-                    <div key={movie.id} className="movieList" onClick={() => showMovie(movie.id)}>
-                        <img className="individualImage" aria-hidden="true" width="203px" height="258px" src={movie.img}></img>
+                    <div key={movie.id} className="movieList">
+                        <Link to={`/moviePage/${id}}`}><img className="individualImage" aria-hidden="true" width="203px" height="258px" src={movie.img}></img></Link>
                         <p className="individualTitle">{movie.title}</p>
                     </div>
                    ))
