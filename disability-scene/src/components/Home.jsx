@@ -1,23 +1,18 @@
 import MovieCarousel from './MovieCarousel'
 import FeaturedMovie from './FeaturedMovie'
-import Search from './Search'
-import PropTypes from 'prop-types'
 
 
 
-const Home = ({ showSearch }) => {
-    console.log('showSearch:', showSearch)
+
+const Home = () => {
 
     return (
         <div className ="home">
-            {showSearch ? <Search /> : <MovieCarousel />}
+            <MovieCarousel />
             <FeaturedMovie />
         </div>
     )
 }
 
-Home.propTypes = {
-    showSearch: PropTypes.bool.isRequired
-}
 
 export default Home
