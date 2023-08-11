@@ -373,7 +373,7 @@ footer {
 
   .review {
     background-color: #d9d9d9;
-    border: solid 2px #d9d9d9;
+    border: solid 2px #58B0CC;
     border-radius: 20px;
     box-shadow: 0 0 2px 2px grey;
     width: 500px;
@@ -402,7 +402,7 @@ footer {
 }
 
 .reviewText {
-  color: darkgray;
+  color: rgb(104, 102, 102);
 }
   
 
