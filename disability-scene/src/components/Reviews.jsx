@@ -29,9 +29,8 @@ const Reviews = () => {
     }
     
     return ( 
+        <div className="review-grid">
         <div className="reviewInfo">
-            <h2>Reviews</h2> 
-            <br></br> 
             <section className="reviewList">
                 {
                    reviews.map((review) => (
@@ -45,6 +44,7 @@ const Reviews = () => {
                 }
             </section>
 
+        </div>
         </div>
     )
 }
