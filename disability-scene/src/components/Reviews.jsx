@@ -30,7 +30,8 @@ const Reviews = () => {
     
     return ( 
         <div className="reviewInfo">
-            <h2>Reviews</h2>  
+            <h2>Reviews</h2> 
+            <br></br> 
             <section className="reviewList">
                 {
                    reviews.map((review) => (
