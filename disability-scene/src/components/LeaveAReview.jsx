@@ -55,7 +55,9 @@ const LeaveAReview = () => {
         }
     };
 
-
+    if (movie.length === 0) {
+        return <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif?20170503175831"/>
+    } else {
     return (
         <form className="myForm" onSubmit={createReview}>
             <h1>Leave a Review for {movie.title} </h1>
@@ -153,6 +155,7 @@ const LeaveAReview = () => {
   
     </form>
     )
+    }
 }
 
 export default LeaveAReview
