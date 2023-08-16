@@ -7,7 +7,7 @@ import MoviePage from './MoviePage'
 import Header from './Header'
 import FilteredMovies from './SearchResults'
 import { useState, useEffect } from 'react'
-//import ActorPage from './ActorPage'
+import ActorPage from './ActorPage'
 
 const Main = () => {
     const [searchResults, setSearchResults] = useState([])
@@ -41,6 +41,7 @@ const Main = () => {
                 <Route path="/leaveAReview/:id" element={<LeaveAReview />} />
                 <Route path="/moviePage/:id" element={<MoviePage />} />
                 <Route path="/movies/moviePage/:id" element={<MoviePage />} />
+                <Route path="/moviePage/:id/actorPage/:id" element={<ActorPage />} />
             </Routes>
         </div>
     )
