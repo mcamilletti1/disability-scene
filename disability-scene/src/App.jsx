@@ -10,6 +10,7 @@ import { useState } from 'react'
 
 
 function App() {
+  const [filteredMovies, setFilteredMovies] = useState([])
 
   const handleSearchSubmit = async (searchText) => {
     try {
@@ -26,7 +27,6 @@ function App() {
   }
 };
 
-const [filteredMovies, setFilteredMovies] = useState([])
 
 
   return (
