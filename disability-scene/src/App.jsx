@@ -11,6 +11,12 @@ import { useState } from 'react'
 
 function App() {
 
+  useEffect(() => {
+    setTimeout(() => {
+      setPageLoaded(true)
+    }, 2000)
+  }, [])
+
   const handleSearchSubmit = async (searchText) => {
     try {
       const response = await axios.get('https://disability-scene-api-production.up.railway.app/movies');
@@ -31,6 +37,7 @@ const [filteredMovies, setFilteredMovies] = useState([])
 
   return (
     <div className='App'>
+      {pageLoaded ? (
       <header>
         <Header onSearchSubmit={handleSearchSubmit} />
       </header>
@@ -42,7 +49,10 @@ const [filteredMovies, setFilteredMovies] = useState([])
       <footer className="footer">
         <Footer />
       </footer>
-    </div>
+  ) : (
+    <img src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
+  )}
+  </div>
   )
 }
 
