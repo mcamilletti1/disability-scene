@@ -49,7 +49,7 @@ const Actors = () => {
                 {
                    actors.map((actor) => (
                     <div key={actor.id} className="actorList" onClick={() => showActor(actor.id)}>
-                        <img className="actorImage" aria-hidden="true" width="203px" height="258px" src={actor.img}></img>
+                        <img className="actorImage" aria-hidden="true" width="100px" height="120px" src={actor.img}></img>
                         <p className="actorTitle">{actor.title}</p>
                     </div>
                    ))
