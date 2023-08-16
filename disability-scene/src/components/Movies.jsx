@@ -25,9 +25,7 @@ const Movies = () => {
         navigate(`moviePage/${id}`)
     }
 
-    if (movies.length === 0) {
-        return <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif?20170503175831"/>
-    } else {
+
     
     return ( 
         <div className="movies-grid">
