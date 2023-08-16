@@ -394,6 +394,7 @@ footer {
 .reviewList {
   list-style: none;
   overflow: scroll;
+  display: grid;
 }
 
 .reviewTitle, .reviewName, .reviewDate {
