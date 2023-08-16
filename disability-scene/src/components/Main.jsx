@@ -5,14 +5,17 @@ import TVShows from './TVShows'
 import LeaveAReview from './LeaveAReview'
 import MoviePage from './MoviePage'
 import ActorPage from './ActorPage'
+import FilteredMovies from './SearchResults'
+import PropTypes from 'prop-types'
 
-const Main = () => {
+const Main = ({ filteredMovies }) => {
 
     return (
         <div className ="routes-container">
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/movies" element={<Movies />} />
+                <Route path="/movies" element={filteredMovies.length > 0 ? (
+                <FilteredMovies filteredMovies={filteredMovies} /> ) : ( <Movies /> )} />
                 <Route path="/TVshows" element={<TVShows />} />
                 <Route path="/leaveAReview/:id" element={<LeaveAReview />} />
                 <Route path="/moviePage/:id" element={<MoviePage />} />
@@ -25,6 +28,14 @@ const Main = () => {
 }
 
 
-
+Main.propTypes = {
+    filteredMovies: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        img: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+  };
 
 export default Main

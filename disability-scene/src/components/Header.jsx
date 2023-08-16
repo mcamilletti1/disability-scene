@@ -14,7 +14,7 @@ const Header = ({ onSearchSubmit }) => {
     <div className="header">
     <Nav/>
     <form id="searchForm" role="search" onSubmit={handleFormSubmit}>
-        <button id="searchButton" type="submit" width="16px" height="16px" aria-label="Search button"><img width="16px" height="16px" aria-hidden="true" src="/assets/search-sharp.svg"/></button>
+        <button id="searchButton" type="submit" width="16px" height="16px" aria-label="Search button"><img width="16px" height="16px" aria-hidden="true" onClick={handleFormSubmit} src="/assets/search-sharp.svg"/></button>
         <input id="searchBar" type="text" name="searchInput" placeholder="Search..." aria-label="Search bar" value={searchText} onChange={(e) => setSearchText(e.target.value)} />
     </form>
     </div>
