@@ -14,8 +14,8 @@ const Main = ({ filteredMovies }) => {
         <div className ="routes-container">
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/movies" element={filteredMovies.length > 0 ? (
-                <FilteredMovies filteredMovies={filteredMovies} /> ) : ( <Movies /> )} />
+                <Route path="/movies" element={<Movies /> } />
+                <Route path="/searchResults" element={<FilteredMovies filteredMovies={filteredMovies} />} />
                 <Route path="/TVshows" element={<TVShows />} />
                 <Route path="/leaveAReview/:id" element={<LeaveAReview />} />
                 <Route path="/moviePage/:id" element={<MoviePage />} />
