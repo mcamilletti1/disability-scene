@@ -8,6 +8,7 @@ import Header from './Header'
 import FilteredMovies from './SearchResults'
 import { useState, useEffect } from 'react'
 import ActorPage from './ActorPage'
+import axios from 'axios'
 
 const Main = () => {
     const [searchResults, setSearchResults] = useState([])
