@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 
 const FilteredMovies = ({ filteredMovies }) => {
   return (
@@ -21,6 +21,16 @@ const FilteredMovies = ({ filteredMovies }) => {
       </div>
     </div>
   );
+};
+
+FilteredMovies.propTypes = {
+  filteredMovies: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      img: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired
+    })
+  ).isRequired,
 };
 
 export default FilteredMovies;
