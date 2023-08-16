@@ -3,20 +3,13 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import axios from 'axios'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 
 
 
 
 function App() {
-  const [pageLoaded, setPageLoaded] = useState(false)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setPageLoaded(true)
-    }, 10000)
-  }, [])
 
   const handleSearchSubmit = async (searchText) => {
     try {
@@ -38,8 +31,6 @@ const [filteredMovies, setFilteredMovies] = useState([])
 
   return (
     <div className='App'>
-      {pageLoaded ? (
-        <>
       <header>
         <Header onSearchSubmit={handleSearchSubmit} />
       </header>
@@ -51,11 +42,7 @@ const [filteredMovies, setFilteredMovies] = useState([])
       <footer className="footer">
         <Footer />
       </footer>
-      </>
-  ) : (
-    <img src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
-  )}
-  </div>
+    </div>
   )
 }
 

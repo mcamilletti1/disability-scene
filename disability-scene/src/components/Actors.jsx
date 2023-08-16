@@ -36,7 +36,11 @@ const Actors = () => {
         navigate(`actorPage/${id}`)
     }
 
-
+    if (actors.length === 0) {
+        return (
+            <img src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
+        )
+    } else {
     
     return ( 
         <div className="actor-carousel">
@@ -55,6 +59,7 @@ const Actors = () => {
         </div>
     )
     }
+}
 
 
 export default Actors

@@ -55,6 +55,11 @@ const LeaveAReview = () => {
         }
     };
 
+    if (movie.length === 0) {
+        return (
+            <img src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
+        )
+    } else {
 
     return (
         <form className="myForm" onSubmit={createReview}>
@@ -154,5 +159,6 @@ const LeaveAReview = () => {
     </form>
     )
     }
+}
 
 export default LeaveAReview
