@@ -45,6 +45,5 @@ const MovieCarousel = () => {
         </div>
     )
     }
-}
 
 export default MovieCarousel

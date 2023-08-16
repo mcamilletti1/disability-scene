@@ -51,6 +51,5 @@ const Reviews = () => {
         </div>
     )
     }
-}
 
 export default Reviews

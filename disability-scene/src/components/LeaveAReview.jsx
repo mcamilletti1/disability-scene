@@ -154,6 +154,5 @@ const LeaveAReview = () => {
     </form>
     )
     }
-}
 
 export default LeaveAReview

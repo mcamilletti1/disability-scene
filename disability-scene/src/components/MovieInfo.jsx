@@ -134,6 +134,5 @@ const MovieInfo = () => {
         </section>
     )
     }
-}
 
 export default MovieInfo
