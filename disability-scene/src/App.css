@@ -421,7 +421,7 @@ footer {
   padding: 0;
 }
 
-.actorImage, .actorHeadshot {
+.actorImage, .actor-headshot {
   border-radius: 5px;
   margin-right: 10px;
 }
@@ -446,6 +446,11 @@ footer {
 
 .actor-photo {
   margin-top: 20px;
+}
+
+strong {
+  color: black;
+  font-weight: bold;
 }
   
 
