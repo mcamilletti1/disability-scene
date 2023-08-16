@@ -84,7 +84,7 @@ const FeaturedMovie = () => {
 
     if (movie.length === 0 || reviews.length === 0) {
         return (
-            <img src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
+            <img className="loadingGif" src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
         )
     } else {
 

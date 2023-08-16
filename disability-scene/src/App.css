@@ -404,6 +404,11 @@ footer {
 .reviewText {
   color: rgb(104, 102, 102);
 }
+
+.loadingGif {
+  margin: 0 auto;
+  text-align: center;
+}
   
 
 
