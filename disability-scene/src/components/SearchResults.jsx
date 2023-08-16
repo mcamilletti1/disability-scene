@@ -1,6 +1,12 @@
 import PropTypes from 'prop-types'
 
 const FilteredMovies = ({ filteredMovies }) => {
+
+  if (filteredMovies.length === 0) {
+    return (
+      <img className="loadingGif" src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
+    )
+  } else {
   return (
     <div className="movies-grid">
       <h2>SEARCH RESULTS</h2>
@@ -22,6 +28,7 @@ const FilteredMovies = ({ filteredMovies }) => {
     </div>
   );
 };
+}
 
 FilteredMovies.propTypes = {
   filteredMovies: PropTypes.arrayOf(
