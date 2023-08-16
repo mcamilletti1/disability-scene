@@ -97,7 +97,7 @@ const MovieInfo = () => {
                     <section id="scoreStars" height="100px">
                         <section className="scoreInfo">
                             <section id="sceneScore">
-                                <img src="public/assets/movieaction.png" width="40px" height="28px" aria-hidden="true"></img>
+                                <img src="/assets/movieaction.png" width="40px" height="28px" aria-hidden="true"></img>
                                 <p id="scoreTitle">Scene Score:</p>
                             </section>
                             <br></br>
