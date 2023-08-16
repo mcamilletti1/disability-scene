@@ -139,6 +139,5 @@ const FeaturedMovie = () => {
         </section>
     )
     }
-}
 
 export default FeaturedMovie
