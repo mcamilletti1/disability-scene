@@ -434,6 +434,11 @@ footer {
 .actorTitle:hover {
   color: #58B0CC;
 }
+
+.actor-page {
+  display: flex;
+  flex-direction: row;
+}
   
 
 
