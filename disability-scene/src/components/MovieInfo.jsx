@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
 import RatingComponent from './RatingComponent'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
@@ -73,7 +72,6 @@ const MovieInfo = () => {
 
     
 
-    let navigate = useNavigate()
 
 
     if (movie.length === 0 || reviews.length === 0) {

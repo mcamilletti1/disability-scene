@@ -71,7 +71,7 @@ const LeaveAReview = () => {
             </p>
   
             <p>
-                <label>Date (ex. "15 July 2023") 
+                <label>Date (ex. 15 July 2023) 
                     <input id="date" type="text" name="date" onChange={(e)=>setDateInput(e.target.value)}/>
                 </label>
             </p>
