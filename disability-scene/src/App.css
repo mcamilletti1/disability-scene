@@ -409,6 +409,24 @@ footer {
   margin: 0 auto;
   text-align: center;
 }
+
+.actorList {
+  display: flex;
+  flex-direction: row;
+}
+
+.actorImage {
+  border-radius: 5px;
+}
+
+.actorImage:hover {
+  filter: brightness(0.8);
+  border: solid 2px #58B0CC;
+}
+
+.actorTitle:hover {
+  color: #58B0CC;
+}
   
 
 
