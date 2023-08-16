@@ -421,7 +421,7 @@ footer {
   padding: 0;
 }
 
-.actorImage {
+.actorImage, .actorHeadshot {
   border-radius: 5px;
   margin-right: 10px;
 }
@@ -438,6 +438,14 @@ footer {
 .actor-page {
   display: flex;
   flex-direction: row;
+}
+
+.actor-details {
+  margin: 100px 0 0 50px;
+}
+
+.actor-photo {
+  margin-top: 20px;
 }
   
 

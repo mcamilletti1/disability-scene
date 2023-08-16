@@ -26,11 +26,11 @@ const ActorPage = () => {
         <div className="actor-page">
             <section className="actor-photo">
                 <h2>{actor.name}</h2>
-                <img width="203px" height="300px" src={actor.img}></img>
+                <img className="actor-headshot" width="203px" height="300px" src={actor.img}></img>
             </section>
             <section className="actor-details">
-                <p>Credits: {actor.credits}</p>
-                <p>Known for: {actor.title}</p>
+                <p><strong>Credits:</strong> {actor.credits}</p>
+                <p><strong>Known for:</strong> {actor.title}</p>
             </section>
         </div>
     )
