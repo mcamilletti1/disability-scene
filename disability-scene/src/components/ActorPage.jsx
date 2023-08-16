@@ -21,6 +21,11 @@ const ActorPage = () => {
         getActor();
     }, [])
 
+    if (actor.length === 0) {
+        return (
+            <img className="loadingGif" src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
+        )
+    } else {
 
     return (
         <div className="actor-page">
@@ -34,6 +39,7 @@ const ActorPage = () => {
             </section>
         </div>
     )
+}
 }
 
 export default ActorPage
