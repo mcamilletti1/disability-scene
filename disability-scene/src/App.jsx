@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setPageLoaded(true)
-    }, 2000)
+    }, 10000)
   }, [])
 
   const handleSearchSubmit = async (searchText) => {
