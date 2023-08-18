@@ -39,7 +39,6 @@ const LeaveAReview = () => {
         const accuracyRating = document.querySelector('input[name="accuracyRating"]:checked').value;
 
         const reviewData = {
-            "movie_id": movieId,
             "title": reviewTitle,
             "reviewer_name": reviewerNameFL,
             "review_text": reviewTextbox,
