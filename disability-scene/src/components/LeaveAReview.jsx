@@ -10,7 +10,7 @@ const LeaveAReview = () => {
     const [reviewTextbox, setReviewTextbox] = useState('');
     const [movie, setMovie] = useState('');
     const [dateInput, setDateInput] = useState('');
-    let { id } = useParams()
+    let { id } = parseInt(useParams())
 
     const loadReviewPage = async () => {
         try {
