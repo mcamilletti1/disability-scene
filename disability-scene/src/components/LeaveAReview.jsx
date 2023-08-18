@@ -10,7 +10,7 @@ const LeaveAReview = () => {
     const [reviewTextbox, setReviewTextbox] = useState('');
     const [movie, setMovie] = useState('');
     const [dateInput, setDateInput] = useState('');
-    let { id } = parseInt(useParams())
+    let { id } = useParams()
 
     const loadReviewPage = async () => {
         try {
@@ -38,7 +38,7 @@ const LeaveAReview = () => {
         const accuracyRating = document.querySelector('input[name="accuracyRating"]:checked').value;
 
         const reviewData = {
-            "movie_id": id,
+            "movie_id": parseInt(id),
             "title": reviewTitle,
             "reviewer_name": reviewerNameFL,
             "review_text": reviewTextbox,
