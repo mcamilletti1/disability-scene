@@ -1,6 +1,8 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { csrfToken } from './helpers'
+
 
 const LeaveAReview = () => {
     const [reviewTitle, setReviewTitle] = useState('');
@@ -47,8 +49,13 @@ const LeaveAReview = () => {
             "accuracy_score": accuracyRating
         };
 
+        const headers = {
+            'X-CSRFToken': csrfToken(),
+            'Content-Type': 'application/json'
+        }
+
         try {
-            const response = await axios.post('https://disability-scene-api-production.up.railway.app/reviews', reviewData);
+            const response = await axios.post('https://disability-scene-api-production.up.railway.app/reviews', reviewData, { headers });
             console.log(response.data);
         } catch (error) {
             console.error(error);
