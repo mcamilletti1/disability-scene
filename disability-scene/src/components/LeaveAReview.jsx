@@ -62,9 +62,9 @@ const LeaveAReview = () => {
             'Content-Type': 'application/json', // Set the content type
         };
 
-            const apiKey = "00d6bfc6-0b12-4488-a538-55158145af6f"
-            const response = await axios.post(`https://disability-scene-api-production.up.railway.app/reviews?api_key=${apiKey}`, reviewData, { headers });
-            console.log(response.data);
+            //const apiKey = "00d6bfc6-0b12-4488-a538-55158145af6f"
+            //const response = await axios.post(`https://disability-scene-api-production.up.railway.app/reviews?api_key=${apiKey}`, reviewData, { headers });
+            //console.log(response.data);
             setFormSubmitted(true)
     };
 
