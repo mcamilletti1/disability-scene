@@ -3,6 +3,12 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { csrfToken } from './helpers';
 
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+
+
 
 const LeaveAReview = () => {
     const [reviewTitle, setReviewTitle] = useState('');
@@ -39,6 +45,7 @@ const LeaveAReview = () => {
         const accuracyRating = document.querySelector('input[name="accuracyRating"]:checked').value;
 
         const reviewData = {
+            "id": getRandomInt(20, 20000),
             "movie": movieId,
             "title": reviewTitle,
             "reviewer_name": reviewerNameFL,
