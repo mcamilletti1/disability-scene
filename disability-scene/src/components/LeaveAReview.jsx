@@ -16,6 +16,7 @@ const LeaveAReview = () => {
     const [reviewTextbox, setReviewTextbox] = useState('');
     const [movie, setMovie] = useState('');
     const [dateInput, setDateInput] = useState('');
+    const [formSubmitted, setFormSubmitted] = useState(false)
     let { id } = useParams()
     let movieId = parseInt(id)
 
@@ -66,12 +67,20 @@ const LeaveAReview = () => {
             const apiKey = "00d6bfc6-0b12-4488-a538-55158145af6f"
             const response = await axios.post(`https://disability-scene-api-production.up.railway.app/reviews?api_key=${apiKey}`, reviewData, { headers });
             console.log(response.data);
+            setFormSubmitted(true)
         } catch (error) {
             console.error(error);
         }
     };
 
-    if (movie.length === 0) {
+    if (formSubmitted) {
+        return (
+            <div className="thankYouMessage">
+                <h2>Thank you for leaving a review!</h2>
+                <p>Your review has been submitted successfully and is under review by our moderation team.</p>
+            </div>
+        )
+    } else if (movie.length === 0) {
         return (
             <img className="loadingGif" src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
         )
