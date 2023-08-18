@@ -55,7 +55,8 @@ const LeaveAReview = () => {
         }
 
         try {
-            const response = await axios.post('https://disability-scene-api-production.up.railway.app/reviews', reviewData, { headers });
+            const apiKey = "00d6bfc6-0b12-4488-a538-55158145af6f"
+            const response = await axios.post(`https://disability-scene-api-production.up.railway.app/reviews?api_key=${apiKey}`, reviewData, { headers });
             console.log(response.data);
         } catch (error) {
             console.error(error);
