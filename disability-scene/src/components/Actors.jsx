@@ -38,7 +38,13 @@ const Actors = () => {
 
     if (actors.length === 0) {
         return (
-            <img className="loadingGif" src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
+            <div className="loadingGif" role="alert">
+                Loading...
+                <img
+                    src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"
+                    alt="Loading animation"
+                />
+            </div>
         )
     } else {
     
@@ -48,7 +54,16 @@ const Actors = () => {
             <div className="actors">
                 {
                    actors.map((actor) => (
-                    <div key={actor.id} className="actorList" onClick={() => showActor(actor.id)}>
+                    <div 
+                    key={actor.id} 
+                    className="actorList" 
+                    onClick={() => showActor(actor.id)}
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            showActor(actor.id);
+                        }
+                    }}>
                         <img className="actorImage" aria-hidden="true" width="100px" height="120px" src={actor.img}></img>
                         <p className="actorTitle">{actor.title}</p>
                     </div>
