@@ -92,7 +92,7 @@ const FeaturedMovie = () => {
             <section id="main">
                 <section id="column1">
                     <h3>Featured Movie: </h3>
-                    <img id="featuredPoster" src={movie.img} width="203px" height="300px" alt="Movie Poster"/>
+                    <img id="featuredPoster" src={movie.img} width="203px" height="300px" alt={movie.title + ' Poster'}/>
                 </section> 
                 <section id="column2">
                     <section>
@@ -109,23 +109,35 @@ const FeaturedMovie = () => {
                             <br></br>
                             <p id="scorePercent">{roundedSceneScore}%</p>
                             <p id="numReviews">(Based on {reviewsLength} reviews)</p>
-                        </section>
+                    </section>
                         <section className="starInfo">
                             <section className="star-line">
                                 <p className="star-title">Authentic Casting: </p>
-                                <RatingComponent className="stars" alt={featuredCastingScore} score={featuredCastingScore}/>
+                                <div className="stars">
+                                    <RatingComponent score={featuredCastingScore}/>
+                                    <span className="visually-hidden">{featuredCastingScore} stars</span>
+                                </div>
                             </section>
                             <section className="star-line">
                                 <p className="star-title">Representative Characters: </p>
-                                <RatingComponent className="stars" alt={featuredCharacterScore} score={featuredCharacterScore}/>
+                                <div className="stars">
+                                    <RatingComponent score={featuredCharacterScore}/>
+                                    <span className="visually-hidden">{featuredCharacterScore} stars</span>
+                                </div>
                             </section>
                             <section className="star-line">
                                 <p className="star-title">Originality: </p>
-                                <RatingComponent className="stars" score={featuredOriginalityScore}/>
+                                <div className="stars">
+                                    <RatingComponent score={featuredOriginalityScore}/>
+                                    <span className="visually-hidden">{featuredOriginalityScore} stars</span>
+                                </div>
                             </section>
                             <section className="star-line">
                                 <p className="star-title">Accuracy: </p>
-                                <RatingComponent className="stars" score={featuredAccuracyScore}/>
+                                <div className="stars">
+                                    <RatingComponent score={featuredAccuracyScore}/>
+                                    <span className="visually-hidden">{featuredAccuracyScore} stars</span>
+                                </div>
                             </section>
                         </section>
                     </section>

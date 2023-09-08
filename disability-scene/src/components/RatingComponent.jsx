@@ -10,11 +10,11 @@ const  RatingComponent = ({ score }) => {
     const starElements = [];
 
     for (let i = 0; i < numFullStars; i++) {
-      starElements.push(<img key={`full-star-${i}`} src="/assets/star.svg" width="14px" height="11px" />);
+      starElements.push(<img key={`full-star-${i}`} src="/assets/star.svg" width="14px" height="11px" aria-hidden="true"/>);
     }
 
     if (hasHalfStar) {
-      starElements.push(<img key="half-star" src="/assets/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" />);
+      starElements.push(<img key="half-star" src="/assets/half-star-icon-design-isolated-on-white-background-vector.jpg" width="14px" height="11px" aria-hidden="true"/>);
     }
 
     return starElements;
