@@ -105,19 +105,23 @@ const MovieInfo = () => {
                         <section className="starInfo">
                             <section className="star-line">
                                 <p className="star-title">Authentic Casting: </p>
-                                <RatingComponent className="stars" alt={featuredCastingScore} score={featuredCastingScore}/>
+                                <RatingComponent className="stars" score={featuredCastingScore}/>
+                                <span className="visually-hidden">{featuredCastingScore} stars</span>
                             </section>
                             <section className="star-line">
                                 <p className="star-title">Representative Characters: </p>
-                                <RatingComponent className="stars" alt={featuredCharacterScore} score={featuredCharacterScore}/>
+                                <RatingComponent className="stars" score={featuredCharacterScore}/>
+                                <span className="visually-hidden">{featuredCharacterScore} stars</span>
                             </section>
                             <section className="star-line">
                                 <p className="star-title">Originality: </p>
                                 <RatingComponent className="stars" score={featuredOriginalityScore}/>
+                                <span className="visually-hidden">{featuredOriginalityScore} stars</span>
                             </section>
                             <section className="star-line">
                                 <p className="star-title">Accuracy: </p>
                                 <RatingComponent className="stars" score={featuredAccuracyScore}/>
+                                <span className="visually-hidden">{featuredAccuracyScore} stars</span>
                             </section>
                         </section>
                     </section>

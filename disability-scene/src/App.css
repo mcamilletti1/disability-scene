@@ -474,6 +474,10 @@ footer {
   border: 0;
 }
 
+.movieList:focus {
+  outline: 2px solid #007bff;
+}
+
 
 
 
