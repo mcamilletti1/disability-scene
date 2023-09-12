@@ -25,6 +25,12 @@ const Movies = () => {
         navigate(`moviePage/${id}`)
     }
 
+    const handleKeyPress = (e, id) => {
+        if (e.key === "Enter") {
+            showMovie(id);
+        }
+    }
+
     if (movies.length === 0) {
         return (
             <img className="loadingGif" src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
@@ -38,7 +44,7 @@ const Movies = () => {
                 {
                    movies.map((movie) => (
                     <div key={movie.id} className="movieList">
-                        <img className="individualImage" aria-hidden="true" width="203px" height="258px" onClick={() => showMovie(movie.id)} src={movie.img}></img>
+                        <img className="individualImage" aria-hidden="true" width="203px" height="258px" onClick={() => showMovie(movie.id)} src={movie.img} tabIndex="0" role="button" onKeyPress={(e) => handleKeyPress(e, movie.id)}></img>
                         <p className="individualTitle">{movie.title}</p>
                     </div>
                    ))
