@@ -180,5 +180,6 @@ const LeaveAReview = () => {
     )
     }
 }
+}
 
 export default LeaveAReview
