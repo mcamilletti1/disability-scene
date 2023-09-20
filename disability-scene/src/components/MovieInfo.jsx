@@ -84,7 +84,7 @@ const MovieInfo = () => {
         <section className="movieInfo">
             <section id="main">
                 <section id="column1">
-                    <img id="featuredPoster" src={movie.img} width="203px" height="300px" alt="Movie Poster"/>
+                    <img id="featuredMoviePoster" src={movie.img} width="203px" height="300px" alt="Movie Poster"/>
                 </section> 
                 <section id="column2">
                     <section>

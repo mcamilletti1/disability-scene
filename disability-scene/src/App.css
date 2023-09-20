@@ -458,6 +458,11 @@ footer {
   border-radius: 5px;
 }
 
+#featuredMoviePoster {
+  border-radius: 5px;
+  margin-top: 60px;
+}
+
 .nav {
   margin-right: 20px;
 }
