@@ -454,6 +454,9 @@ footer {
 }
   
 
+#featuredPoster {
+  border-radius: 5px;
+}
 
 .nav {
   margin-right: 20px;
