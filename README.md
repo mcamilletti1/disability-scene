@@ -1,19 +1,38 @@
-# disability-scene
+# DisabilityScene
 
-A movie review website that reviews movies based on how well they represent disability on screen. This website will be in the style of Rotten Tomatoes, but for movies about disability. Users will be able to write reviews about different movies and rate them on a scale of 1-5 based on different qualities such as authentic casting of disabled actors, presence of common disability stereotypes, accuracy of representation, and whether or not the film was made by disabled filmmakers. It will be an educational resource about disability representation as well as a showcase for disabled filmmakers and actors. There will be a backend database with models for actors, films, and reviews with full CRUD functionality, as well as an interactive front-end.
+**DisabilityScene** is a unique movie review platform dedicated to evaluating films based on their representation of disability. Think of it as a specialized version of Rotten Tomatoes, but with a focus on movies that portray disability.
 
-Trello: https://trello.com/invite/b/XZqUfGvt/ATTI5f0d2204f06dc4397009682dbc919689C4604F70/disability-seen 
+## Overview
 
-ERD: https://lucid.app/lucidchart/04ccce81-b238-4ab1-b580-275cd1809ea2/edit?viewport_loc=176%2C-19%2C851%2C719%2C0_0&invitationId=inv_9c7db288-e0c5-4aff-927e-0f227dd5fc45
+- **Purpose**: To provide insights into how movies represent disability on screen.
+- **Features**:
+  - Users can submit reviews for movies, rating them on a scale of 1-5.
+  - Ratings are based on various criteria including:
+    - Authentic casting of disabled actors.
+    - Presence of common disability stereotypes.
+    - Accuracy of representation.
+    - Whether the film was produced by disabled filmmakers.
+  - The platform serves as both an educational resource on disability representation and a spotlight for disabled filmmakers and actors.
+  - Backend database supports models for actors, films, and reviews, offering full CRUD functionality.
+  - Interactive frontend for a seamless user experience.
 
-Figma: https://www.figma.com/file/nD6CKtCufLUu5CHgSZBtv9/disability-seen?type=design&node-id=4-2&t=gRB1SbwcANLfCp1X-0
+## Pages
 
-Pages:
+- **Home Page**: Features a search bar for easy movie lookup.
+- **Movie Page**: Displays movie details and user reviews.
+- **Write a Review Page**: Allows users to submit their reviews.
+- **Actor Page**: Showcases actors and their roles in various films.
+- **About Page**: Provides information about the platform and its mission.
 
-Home Page w/ search bar
+## Additional Resources
 
-Movie Page w/Reviews
+- [Trello Board](https://trello.com/invite/bxzqufgvtatti5f0d2204f06dc4397009682dbc919689c4604f70disabilityseen)
+- [ERD Diagram](https://lucid.app/lucidchart/04ccce81b2384ab1b580275cd1809ea2/edit)
+- [Figma Design](https://www.figma.com/file/nd6cktcufluu5chgszbtv9/disabilityseen)
 
-Write a Review Page
+## Tech Stack
 
-Actor Page
+- **Frontend**: React
+- **Backend**: Django
+- **Database**: PostgreSQL
+- **Languages**: JavaScript (83.9%), CSS (15.1%), HTML (10%)
