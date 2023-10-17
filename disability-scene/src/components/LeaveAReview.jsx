@@ -57,15 +57,22 @@ const LeaveAReview = () => {
             "accuracy_score": accuracyRating
         };
 
-        const headers = {
-            'X-CSRFToken': csrfToken(), // Include the CSRF token in the headers
-            'Content-Type': 'application/json', // Set the content type
-        };
+        try {
+            const response = await axios.post(`https://mcamilletti1.pythonanywhere.com/api/review/`, reviewData, { 
+                headers: {
+                    'Content-Type': 'application/json',
+                } 
+            });
 
-            //const apiKey = "00d6bfc6-0b12-4488-a538-55158145af6f"
-            //const response = await axios.post(`https://disability-scene-api-production.up.railway.app/reviews?api_key=${apiKey}`, reviewData, { headers });
-            //console.log(response.data);
-            setFormSubmitted(true)
+            if (response.status === 201) {
+                console.log(response.data);
+                setFormSubmitted(true);
+            } else {
+                console.error('Failed to post review', response);
+            }
+        } catch (error) {
+            console.error('An error occurred while sending the review', error);
+        }
     };
 
     if (formSubmitted) {
