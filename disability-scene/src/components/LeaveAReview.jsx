@@ -49,6 +49,7 @@ const LeaveAReview = () => {
             "movie": movieId,
             "title": reviewTitle,
             "reviewer_name": reviewerNameFL,
+            "user": 1,
             "review_text": reviewTextbox,
             "date": dateInput,
             "casting_score": castingRating,
