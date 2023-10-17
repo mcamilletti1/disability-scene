@@ -10,7 +10,7 @@ const ActorPage = () => {
     useEffect(() => {
         const getActor = async () => {
             try {
-                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/cast/${id}`);
+                const response = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/cast/${id}`);
                 const featuredActor = response.data;
                 setActor(featuredActor);
             } catch (error) {

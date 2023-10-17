@@ -18,7 +18,7 @@ const MovieInfo = () => {
     useEffect(() => {
         const getMovie = async () => {
             try {
-                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movies/${id}`);
+                const response = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/movie/${id}/`);
                 const featuredMovie = response.data;
                 setMovie(featuredMovie);
             } catch (error) {
@@ -31,7 +31,7 @@ const MovieInfo = () => {
     useEffect(() => {
         const getReviews = async () => {
             try {
-                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movies/${id}/reviews`);
+                const response = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/movie/${id}/reviews/`);
                 const data = response.data;
                 setReviews(data);
             } catch (error) {

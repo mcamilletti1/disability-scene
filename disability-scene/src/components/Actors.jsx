@@ -16,7 +16,7 @@ const Actors = () => {
     useEffect(() => {
         const getActors = async () => {
             try {
-                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movies/${id}/cast/`);
+                const response = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/movie/${id}/cast/`);
                 console.log("API Response:", response.data)
                 const data = response.data;
                 setActors(data);

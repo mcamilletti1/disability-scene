@@ -10,7 +10,7 @@ const MovieCarousel = () => {
     useEffect(() => {
         const getMovies = async () => {
             try {
-                const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movies`);
+                const response = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/movie/`);
                 const data = response.data;
                 setMovies(data);
             } catch (error) {

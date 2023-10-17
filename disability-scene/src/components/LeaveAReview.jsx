@@ -22,7 +22,7 @@ const LeaveAReview = () => {
 
     const loadReviewPage = async () => {
         try {
-            const response = await axios.get(`https://disability-scene-api-production.up.railway.app/movies/${id}`);
+            const response = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/movie/${id}/`);
             const currentMovie = response.data
             setMovie(currentMovie);
             document.title = `Leave a Review for "${currentMovie.title}"`;
