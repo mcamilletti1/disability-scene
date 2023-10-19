@@ -19,7 +19,7 @@ const FeaturedMovie = () => {
                 const response = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/movie/`);
                 const movies = response.data;
                 const lastMovie = movies[movies.length - 1];
-                const response2 = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/movie/${movies[lastMovie].id}/`);
+                const response2 = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/movie/${lastMovie.id}/`);
                 const featuredMovie = response2.data;
                 setMovie(featuredMovie);
             } catch (error) {
