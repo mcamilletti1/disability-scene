@@ -21,7 +21,7 @@ const FeaturedMovie = () => {
                 const lastMovie = movies[movies.length - 1];
                 const response2 = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/movie/${lastMovie}/`);
                 const featuredMovie = response2.data;
-                setMovie(featuredMovie);
+                setMovie(lastMovie);
             } catch (error) {
                 console.error("Error fetching movie:", error);
             }
