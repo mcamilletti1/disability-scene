@@ -11,7 +11,8 @@ const Movies = () => {
             try {
                 const response = await axios.get(`https://mcamilletti1.pythonanywhere.com/api/movie/`);
                 const data = response.data;
-                setMovies(data);
+                const filteredMovies = data.filter(movie => movie.media_type === "Movie");
+                setMovies(filteredMovies);
             } catch (error) {
                 console.error("Error fetching movies:", error);
             }
