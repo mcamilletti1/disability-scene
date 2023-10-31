@@ -35,7 +35,7 @@ const MovieCarousel = () => {
 
     return ( 
         <div className="movie-carousel">
-            <h2>MOVIES</h2>  
+            <h2>MOVIES/TV SHOWS</h2>  
             <div className="carousel">
                 {
                    movies.map((movie) => (
