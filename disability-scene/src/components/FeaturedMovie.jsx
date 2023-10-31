@@ -85,7 +85,7 @@ const FeaturedMovie = () => {
         return (
             <img className="loadingGif" src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
         )
-    } else if movie.media_type === "Movie" {
+    } else if (movie.media_type === "Movie") {
 
     return (
         <section className="movieInfo">
