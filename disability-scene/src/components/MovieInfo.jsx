@@ -78,7 +78,7 @@ const MovieInfo = () => {
         return (
             <img className="loadingGif" src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
         )
-    } else {
+    } else if (movie.media_type === "Movie") {
 
     return (
         <section className="movieInfo">
@@ -139,6 +139,66 @@ const MovieInfo = () => {
             </aside>
         </section>
     )
+    } else {
+        return (
+            <section className="movieInfo">
+            <section id="main">
+                <section id="column1">
+                    <img id="featuredMoviePoster" src={movie.img} width="203px" height="300px" alt="TV Show Poster"/>
+                </section> 
+                <section id="column2">
+                    <section>
+                        <h4 id="movieTitle">{movie.title} ({movie.year})</h4> 
+                        <p id="dateGenreDuration">{movie.year} | {movie.genre} | {movie.duration} seasons</p>
+                        <p id="movieDescription">{movie.description}</p>
+                    </section>
+                    <section id="scoreStars" height="100px">
+                        <section className="scoreInfo">
+                            <section id="sceneScore">
+                                <img src="/assets/movieaction.png" width="40px" height="28px" aria-hidden="true"></img>
+                                <p id="scoreTitle">Scene Score:</p>
+                            </section>
+                            <br></br>
+                            <p id="scorePercent">{roundedSceneScore}%</p>
+                            <p id="numReviews">(Based on {reviewsLength} reviews)</p>
+                        </section>
+                        <section className="starInfo">
+                            <section className="star-line">
+                                <p className="star-title">Authentic Casting: </p>
+                                <RatingComponent className="stars" score={featuredCastingScore}/>
+                                <span className="visually-hidden">{featuredCastingScore} stars</span>
+                            </section>
+                            <section className="star-line">
+                                <p className="star-title">Representative Characters: </p>
+                                <RatingComponent className="stars" score={featuredCharacterScore}/>
+                                <span className="visually-hidden">{featuredCharacterScore} stars</span>
+                            </section>
+                            <section className="star-line">
+                                <p className="star-title">Originality: </p>
+                                <RatingComponent className="stars" score={featuredOriginalityScore}/>
+                                <span className="visually-hidden">{featuredOriginalityScore} stars</span>
+                            </section>
+                            <section className="star-line">
+                                <p className="star-title">Accuracy: </p>
+                                <RatingComponent className="stars" score={featuredAccuracyScore}/>
+                                <span className="visually-hidden">{featuredAccuracyScore} stars</span>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <aside className="tags">
+                <h4 id="tagsHeader"><strong>Tags</strong></h4>
+                <p className="tagsSubheader"><strong>Disabilities</strong></p>
+                <p id="disabilities">{movie.disabilities}</p>
+                <p className="tagsSubheader"><strong>Themes</strong></p>
+                <p>{movie.themes}</p>
+                <p className="tagsSubheader"><strong>Genre</strong></p>
+                <p id="genre">{movie.genre}</p>
+                <Link to={`/leaveAReview/${id}`}><button key={id} id="reviewButton" width="216px" height="40px" aria-label="Submit a review">SUBMIT A REVIEW</button></Link>
+            </aside>
+        </section>
+        )
     }
 }
 
