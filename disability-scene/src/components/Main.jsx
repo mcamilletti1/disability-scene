@@ -23,6 +23,7 @@ const Main = ({ filteredMovies }) => {
                 <Route path="/movies/moviePage/:id" element={<MoviePage />} />
                 <Route path="/moviePage/:id/actorPage/:id" element={<ActorPage />} />
                 <Route path="/movies/moviePage/:id/actorPage/:id" element={<ActorPage />} />
+                <Route path="/TVshows/moviePage/:id/actorPage/:id" element={<ActorPage />} />
             </Routes>
         </div>
     )
