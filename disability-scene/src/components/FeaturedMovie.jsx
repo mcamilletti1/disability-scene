@@ -92,7 +92,7 @@ const FeaturedMovie = () => {
             <section id="main">
                 <section id="column1">
                     <h3>Featured Movie: </h3>
-                    <img id="featuredPoster" src={movie.img} width="203px" height="400px" alt={movie.title + ' Poster'}/>
+                    <img id="featuredPoster" src={movie.img} width="203px" height="300px" alt={movie.title + ' Poster'}/>
                 </section> 
                 <section id="column2">
                     <section>
