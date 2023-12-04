@@ -526,7 +526,7 @@ display: flex;
   padding: 48px 0 0;
   color: white;
   overflow: hidden;
-  background: url('images/stars.svg') no-repeat top left;
+  background: url('/assets/stars.svg') no-repeat top left;
 }
 
 .characterRating label{
@@ -535,7 +535,7 @@ display: flex;
   padding: 48px 0 0;
   color: white;
   overflow: hidden;
-  background: url('images/stars.svg') no-repeat top left;
+  background: url('/assets/stars.svg') no-repeat top left;
 }
 
 .originalityRating label{
@@ -544,7 +544,7 @@ display: flex;
   padding: 48px 0 0;
   color: white;
   overflow: hidden;
-  background: url('images/stars.svg') no-repeat top left;
+  background: url('/assets/stars.svg') no-repeat top left;
 }
 
 .accuracyRating label{
@@ -553,7 +553,7 @@ display: flex;
   color: white;
   padding: 48px 0 0;
   overflow: hidden;
-  background: url('images/stars.svg') no-repeat top left;
+  background: url('/assets/stars.svg') no-repeat top left;
 }
 
 .castingRating:not(:hover) input:indeterminate + label,
