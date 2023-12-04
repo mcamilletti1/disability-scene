@@ -110,45 +110,45 @@ const LeaveAReview = () => {
         <div className="castingRating">
             <p className="ratingLabel">Authentic Casting: </p>
             <input id="rating1" type="radio" name="castingRating" value="1"/>
-            <label htmlFor="rating1">★</label>
+            <label htmlFor="rating1">1</label>
             <input id="rating2" type="radio" name="castingRating" value="2"/>
-            <label htmlFor="rating2">★</label>
+            <label htmlFor="rating2">2</label>
             <input id="rating3" type="radio" name="castingRating" value="3"/>
-            <label htmlFor="rating3">★</label>
+            <label htmlFor="rating3">3</label>
             <input id="rating4" type="radio" name="castingRating" value="4"/>
-            <label htmlFor="rating4">★</label>
+            <label htmlFor="rating4">4</label>
             <input id="rating5" type="radio" name="castingRating" value="5"/>
-            <label htmlFor="rating5">★</label>
+            <label htmlFor="rating5">5</label>
         </div>
 
  
         <div className="characterRating">
             <p className="ratingLabel">Representative Characters: </p>
             <input id="characterRating1" type="radio" name="characterRating" value="1"/>
-            <label htmlFor="characterRating1">★</label>
+            <label htmlFor="characterRating1">1</label>
             <input id="characterRating2" type="radio" name="characterRating" value="2"/>
-            <label htmlFor="characterRating2">★</label>
+            <label htmlFor="characterRating2">2</label>
             <input id="characterRating3" type="radio" name="characterRating" value="3"/>
-            <label htmlFor="characterRating3">★</label>
+            <label htmlFor="characterRating3">3</label>
             <input id="characterRating4" type="radio" name="characterRating" value="4"/>
-            <label htmlFor="characterRating4">★</label>
+            <label htmlFor="characterRating4">4</label>
             <input id="characterRating5" type="radio" name="characterRating" value="5"/>
-            <label htmlFor="characterRating5">★</label>
+            <label htmlFor="characterRating5">5</label>
         </div>
 
 
         <div className="originalityRating">
             <p className="ratingLabel">Originality: </p>
             <input id="originalityRating1" type="radio" name="originalityRating" value="1"/>
-            <label htmlFor="originalityRating1">★</label>
+            <label htmlFor="originalityRating1">1</label>
             <input id="originalityRating2" type="radio" name="originalityRating" value="2"/>
-            <label htmlFor="originalityRating2">★</label>
+            <label htmlFor="originalityRating2">2</label>
             <input id="originalityRating3" type="radio" name="originalityRating" value="3"/>
-            <label htmlFor="originalityRating3">★</label>
+            <label htmlFor="originalityRating3">3</label>
             <input id="originalityRating4" type="radio" name="originalityRating" value="4"/>
-            <label htmlFor="originalityRating4">★</label>
+            <label htmlFor="originalityRating4">4</label>
             <input id="originalityRating5" type="radio" name="originalityRating" value="5"/>
-            <label htmlFor="originalityRating5">★</label>
+            <label htmlFor="originalityRating5">5</label>
         </div>
 
 
@@ -156,15 +156,15 @@ const LeaveAReview = () => {
         <div className="accuracyRating">
             <p className="ratingLabel">Accuracy: </p>
             <input id="accuracyRating1" type="radio" name="accuracyRating" value="1"/>
-            <label htmlFor="accuracyRating1">★</label>
+            <label htmlFor="accuracyRating1">1</label>
             <input id="accuracyRating2" type="radio" name="accuracyRating" value="2"/>
-            <label htmlFor="accuracyRating2">★</label>
+            <label htmlFor="accuracyRating2">2</label>
             <input id="accuracyRating3" type="radio" name="accuracyRating" value="3"/>
-            <label htmlFor="accuracyRating3">★</label>
+            <label htmlFor="accuracyRating3">3</label>
             <input id="accuracyRating4" type="radio" name="accuracyRating" value="4"/>
-            <label htmlFor="accuracyRating4">★</label>
+            <label htmlFor="accuracyRating4">4</label>
             <input id="accuracyRating5" type="radio" name="accuracyRating" value="5"/>
-            <label htmlFor="accuracyRating5">★</label>
+            <label htmlFor="accuracyRating5">5</label>
         </div>
   
   
