@@ -108,7 +108,7 @@ const FeaturedMovie = () => {
                             </section>
                             <br></br>
                             <p id="scorePercent">{roundedSceneScore}%</p>
-                            <p id="numReviews">(Based on {reviewsLength} reviews)</p>
+                            <p id="numReviews">(Based on {reviewsLength} {reviewsLength === 1 ? 'review' : 'reviews'})</p>
                     </section>
                         <section className="starInfo">
                             <section className="star-line">
