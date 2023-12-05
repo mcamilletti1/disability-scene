@@ -602,7 +602,7 @@ margin-right: 30px;
 font-size: 15px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 546px) {
   .header {
     flex-direction: column;
     padding-right: 0;
@@ -630,7 +630,7 @@ font-size: 15px;
   }
 }
 
-@media (min-width: 451px) and (max-width: 907px) {
+@media (min-width: 451px) and (max-width: 742px) {
   .header {
     justify-content: start;
     padding-right: 0;
@@ -652,7 +652,13 @@ font-size: 15px;
   #column2 {
     padding-right: 0;
   }
+
+  .movieInfo {
+    flex-direction: column;
+  }
 }
+
+
 
 
 
