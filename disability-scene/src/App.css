@@ -602,7 +602,7 @@ margin-right: 30px;
 font-size: 15px;
 }
 
-@media (max-width: 546px) {
+@media (max-width: 579px) {
   .header {
     flex-direction: column;
     padding-right: 0;
@@ -632,7 +632,7 @@ font-size: 15px;
   }
 }
 
-@media (min-width: 451px) and (max-width: 858px) {
+@media (min-width: 579px) and (max-width: 858px) {
   .header {
     justify-content: start;
     padding-right: 0;
