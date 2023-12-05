@@ -632,6 +632,10 @@ font-size: 15px;
     margin-right: 0px;
     padding-right: 0;
   }
+
+  .myForm {
+    border: none;
+  }
   
 }
 
