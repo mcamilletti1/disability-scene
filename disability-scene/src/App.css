@@ -631,7 +631,7 @@ font-size: 15px;
   }
 }
 
-@media (min-width: 451px) and (max-width: 742px) {
+@media (min-width: 451px) and (max-width: 858px) {
   .header {
     justify-content: start;
     padding-right: 0;
