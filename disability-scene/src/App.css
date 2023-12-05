@@ -618,7 +618,7 @@ font-size: 15px;
   }
 
   .scoreInfo {
-    margin-right: 0;
+    margin-right: 5px;
   }
 
   .movieInfo {
@@ -627,6 +627,7 @@ font-size: 15px;
   
   #column2 {
     padding-right: 0;
+    padding-top: 10px;
   }
 }
 
@@ -651,6 +652,7 @@ font-size: 15px;
 
   #column2 {
     padding-right: 0;
+    padding-top: 10px;
   }
 
   .movieInfo {
