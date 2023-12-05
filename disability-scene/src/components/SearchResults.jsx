@@ -4,7 +4,10 @@ const FilteredMovies = ({ filteredMovies }) => {
 
   if (filteredMovies.length === 0) {
     return (
+      <div className="movies-grid">
+        <h2>SEARCH RESULTS</h2>
         <img className="loadingGif" src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
+      </div>
     )
   } else {
 
