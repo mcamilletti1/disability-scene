@@ -26,6 +26,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   list-style: none;
+  margin-right: 20px;
   margin-bottom: 10px;
 }
 
@@ -365,7 +366,7 @@ footer {
   .grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     gap: 10px;
   }
 
