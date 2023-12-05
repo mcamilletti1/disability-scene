@@ -629,26 +629,26 @@ font-size: 15px;
   }
 
   .castingRating label{
-    width: 40px;
-    height: 40px;
-    padding: 40px 0 0;
+    width: 35px;
+    height: 35px;
+    padding: 35px 0 0;
   }
   
   .characterRating label{
-    width: 40px;
-    height: 40px;
-    padding: 40px 0 0;
+    width: 35px;
+    height: 35px;
+    padding: 35px 0 0;
   }
   
   .originalityRating label{
-    width: 40px;
-    height: 40px;
-    padding: 40px 0 0;
+    width: 35px;
+    height: 35px;
+    padding: 35px 0 0;
   
   .accuracyRating label{
-    width: 40px;
-    height: 40px;
-    padding: 40px 0 0;
+    width: 35px;
+    height: 35px;
+    padding: 35px 0 0;
   }
   
 }
