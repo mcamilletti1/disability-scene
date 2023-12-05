@@ -627,6 +627,30 @@ font-size: 15px;
     margin-right: 0;
     padding-top: 10px;
   }
+
+  .castingRating label{
+    width: 40px;
+    height: 40px;
+    padding: 40px 0 0;
+  }
+  
+  .characterRating label{
+    width: 40px;
+    height: 40px;
+    padding: 40px 0 0;
+  }
+  
+  .originalityRating label{
+    width: 40px;
+    height: 40px;
+    padding: 40px 0 0;
+  
+  .accuracyRating label{
+    width: 40px;
+    height: 40px;
+    padding: 40px 0 0;
+  }
+  
 }
 
 @media (min-width: 579px) and (max-width: 858px) {
@@ -657,6 +681,8 @@ font-size: 15px;
   .scoreInfo {
     margin-right: 5px;
   }
+
+  
 }
 
 
