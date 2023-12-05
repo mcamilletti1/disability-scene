@@ -654,6 +654,10 @@ font-size: 15px;
   .movieInfo {
     flex-direction: column;
   }
+
+  .scoreInfo {
+    margin-right: 5px;
+  }
 }
 
 
