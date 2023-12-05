@@ -181,7 +181,7 @@ const FeaturedMovie = () => {
                     </section>
                         <section className="starInfo">
                             <section className="star-line">
-                                <p className="star-title">Authentic Casting: </p>
+                                <p className="star-title">Casting: </p>
                                 <div className="stars">
                                     <RatingComponent score={featuredCastingScore}/>
                                     <span className="visually-hidden">{featuredCastingScore} stars</span>
