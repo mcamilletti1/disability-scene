@@ -119,7 +119,7 @@ const FeaturedMovie = () => {
                                 </div>
                             </section>
                             <section className="star-line">
-                                <p className="star-title">Representative Characters: </p>
+                                <p className="star-title">Characters: </p>
                                 <div className="stars">
                                     <RatingComponent score={featuredCharacterScore}/>
                                     <span className="visually-hidden">{featuredCharacterScore} stars</span>
