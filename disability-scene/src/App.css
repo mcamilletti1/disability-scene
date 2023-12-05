@@ -611,6 +611,10 @@ font-size: 15px;
   .nav {
     margin: 0;
   }
+
+  #main {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 451px) and (max-width: 907px) {
