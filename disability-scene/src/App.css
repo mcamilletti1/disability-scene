@@ -456,7 +456,7 @@ footer {
 
 #featuredPoster {
   border-radius: 5px;
-  height: 500px;
+  height: 400px;
 }
 
 #featuredMoviePoster {
@@ -611,6 +611,10 @@ font-size: 15px;
 
 @media (min-width: 451px) and (max-width: 907px) {
   .header {
+    justify-content: start;
+  }
+
+  .nav-links {
     justify-content: start;
   }
 }
