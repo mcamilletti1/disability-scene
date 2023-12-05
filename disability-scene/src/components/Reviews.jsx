@@ -41,7 +41,7 @@ const Reviews = () => {
             <section className="reviewList">
                 {
                    reviews.map((review) => (
-                    <section key={review.id} onClick={() => showReview(review.id)} height="200px" width="800px" className="review">
+                    <section key={review.id} onClick={() => showReview(review.id)} height="200px" className="review">
                         <p className="reviewTitle"><strong>{review.title}</strong></p>
                         <p className="reviewerName"><strong>{review.reviewer_name}</strong></p>
                         <p className="reviewDate"><strong>{review.date}</strong></p>
