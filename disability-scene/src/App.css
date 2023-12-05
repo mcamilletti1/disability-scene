@@ -618,6 +618,10 @@ font-size: 15px;
   .scoreInfo {
     margin-right: 0;
   }
+
+  .movieInfo {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 451px) and (max-width: 907px) {
@@ -632,9 +636,9 @@ font-size: 15px;
   .nav {
     margin: 0;
   }
-
-  .scoreInfo {
-    margin-right: 0;
+  
+  .movieInfo {
+    flex-direction: column;
   }
 }
 
