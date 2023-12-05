@@ -14,7 +14,7 @@ function App() {
 
   const handleSearchSubmit = async (searchText) => {
     try {
-      const response = await axios.get('https://disability-scene-api-production.up.railway.app/movies');
+      const response = await axios.get('https://mcamilletti1.pythonanywhere.com/api/movie/');
       const allMovies = response.data;
       
       const filteredMovies = allMovies.filter((movie) =>
