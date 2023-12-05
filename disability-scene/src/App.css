@@ -133,6 +133,7 @@ footer {
 #scoreStars {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .scoreInfo {
@@ -599,6 +600,17 @@ background-position: -96px 0;
 .ratingLabel {
 margin-right: 30px;
 font-size: 15px;
+}
+
+@media (max-width: 450px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 907px) {
+
 }
 
 
