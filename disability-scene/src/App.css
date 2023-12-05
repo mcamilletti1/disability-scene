@@ -456,7 +456,7 @@ footer {
 
 #featuredPoster {
   border-radius: 5px;
-  height: 400px;
+  height: 350px;
 }
 
 #featuredMoviePoster {
@@ -607,6 +607,10 @@ font-size: 15px;
   .header {
     flex-direction: column;
   }
+
+  .nav {
+    margin: 0;
+  }
 }
 
 @media (min-width: 451px) and (max-width: 907px) {
@@ -616,6 +620,10 @@ font-size: 15px;
 
   .nav-links {
     justify-content: start;
+  }
+
+  .nav {
+    margin: 0;
   }
 }
 
