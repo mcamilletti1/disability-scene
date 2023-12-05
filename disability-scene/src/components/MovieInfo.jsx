@@ -164,12 +164,12 @@ const MovieInfo = () => {
                         </section>
                         <section className="starInfo">
                             <section className="star-line">
-                                <p className="star-title">Authentic Casting: </p>
+                                <p className="star-title">Casting: </p>
                                 <RatingComponent className="stars" score={featuredCastingScore}/>
                                 <span className="visually-hidden">{featuredCastingScore} stars</span>
                             </section>
                             <section className="star-line">
-                                <p className="star-title">Representative Characters: </p>
+                                <p className="star-title">Characters: </p>
                                 <RatingComponent className="stars" score={featuredCharacterScore}/>
                                 <span className="visually-hidden">{featuredCharacterScore} stars</span>
                             </section>
