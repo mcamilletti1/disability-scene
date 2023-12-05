@@ -605,10 +605,12 @@ font-size: 15px;
 @media (max-width: 450px) {
   .header {
     flex-direction: column;
+    padding-right: 0;
   }
 
   .nav {
     margin: 0;
+    padding-right: 0;
   }
 
   #main {
@@ -631,6 +633,7 @@ font-size: 15px;
 @media (min-width: 451px) and (max-width: 907px) {
   .header {
     justify-content: start;
+    padding-right: 0;
   }
 
   .nav-links {
@@ -639,6 +642,7 @@ font-size: 15px;
 
   .nav {
     margin: 0;
+    padding-right: 0;
   }
   
   .movieInfo {
