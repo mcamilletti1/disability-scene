@@ -261,7 +261,6 @@ footer {
 .movieInfo {
   display: flex;
     flex-direction: row;
-    border-top: solid 2px black;
     border-bottom: solid 2px black;
     font-style: bold;
 }
