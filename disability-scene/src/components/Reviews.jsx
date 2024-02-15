@@ -47,7 +47,7 @@ const Reviews = () => {
                                 <p className="reviewText">
                                     {expandedReviews[review.id] ? review.review_text : `${review.review_text.substring(0, 100)}...`}
                                     {!expandedReviews[review.id] && (
-                                        <button onClick={(e) => {
+                                        <button id="readMore" onClick={(e) => {
                                             e.stopPropagation();
                                             toggleReview(review.id);
                                         }}>
@@ -55,7 +55,7 @@ const Reviews = () => {
                                         </button>
                                     )}
                                 </p>
-                                <button onClick={() => showReview(review.id)}>View Review</button>
+                                {/* <button onClick={() => showReview(review.id)}>View Review</button> */}
                             </section>
                         ))}
                     </section>
