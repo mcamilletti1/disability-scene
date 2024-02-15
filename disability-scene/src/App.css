@@ -439,6 +439,11 @@ footer {
   color: #58B0CC;
 }
 
+.actorName {
+  font-weight: bold;
+  color: black;
+}
+
 .actor-page {
   display: flex;
   flex-direction: row;
