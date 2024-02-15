@@ -398,7 +398,6 @@ footer {
 
 .reviewList {
   list-style: none;
-  overflow: scroll;
   display: grid;
 }
 
