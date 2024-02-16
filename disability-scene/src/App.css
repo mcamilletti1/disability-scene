@@ -249,10 +249,12 @@ footer {
 .individualImage:hover {
   filter: brightness(0.8);
   border: solid 2px #58B0CC;
+  cursor: pointer;
 }
 
 .individualTitle:hover {
   color: #58B0CC;
+  cursor: pointer;
 }
 
 
@@ -433,10 +435,12 @@ footer {
 .actorImage:hover {
   filter: brightness(0.8);
   border: solid 2px #58B0CC;
+  cursor: pointer;
 }
 
 .actorTitle:hover {
   color: #58B0CC;
+  cursor: pointer;
 }
 
 .actorName {
