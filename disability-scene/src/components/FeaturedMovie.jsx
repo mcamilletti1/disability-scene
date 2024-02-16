@@ -165,7 +165,7 @@ const FeaturedMovie = () => {
             <section id="main">
                 <section id="column1">
                     <h3>Featured TV Show: </h3>
-                    <img id="featuredPoster" src={movie.img} width="203px" alt={movie.title + ' Poster'}/>
+                    <div role="button" onClick={() => showMovie(id)}><img id="featuredPoster" src={movie.img} width="203px" alt={movie.title + ' Poster'}/></div>
                 </section> 
                 <section id="column2">
                     <section>
