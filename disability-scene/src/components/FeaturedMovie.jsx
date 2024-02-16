@@ -81,6 +81,10 @@ const FeaturedMovie = () => {
         navigate(`leaveAReview/${id}`)
     }
 
+    const showMovie = (id) => {
+        navigate(`moviePage/${id}`)
+    }
+
     if (movie.length === 0 || reviews.length === 0) {
         return (
             <img className="loadingGif" src="https://www.istitutomarangoni.com/fe-web/img/marangoni/loader.gif"></img>
@@ -92,7 +96,7 @@ const FeaturedMovie = () => {
             <section id="main">
                 <section id="column1">
                     <h3>Featured Movie: </h3>
-                    <img id="featuredPoster" src={movie.img} width="203px" height="300px" alt={movie.title + ' Poster'}/>
+                    <img id="featuredPoster" role="button" onClick={() => showMovie(movie.id)} src={movie.img} width="203px" height="300px" alt={movie.title + ' Poster'}/>
                 </section> 
                 <section id="column2">
                     <section>

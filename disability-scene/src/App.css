@@ -472,6 +472,12 @@ footer {
   height: 325px;
 }
 
+#featuredPoster:hover {
+  filter: brightness(0.8);
+  border: solid 2px #58B0CC;
+  cursor: pointer;
+}
+
 #featuredMoviePoster {
   border-radius: 5px;
   margin-top: 60px;
