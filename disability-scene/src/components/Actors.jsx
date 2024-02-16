@@ -66,7 +66,7 @@ const Actors = () => {
                     }}>
                         <img className="actorImage" aria-hidden="true" width="100px" height="120px" src={actor.img}></img>
                         <p className="actorName">{actor.name}</p>
-                        <p className="actorTitle">{actor.title}</p>
+                        <p className="actorTitle">{actor.character_name}</p>
                     </div>
                    ))
                 }
